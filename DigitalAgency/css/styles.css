@@ -211,7 +211,7 @@ body {
 
 .introduction {
   padding: 40px 16px;
-  background: url(../../source/img/main_background.jpg) center/cover no-repeat;
+  background: url(../source/img/main_background.jpg) center/cover no-repeat;
 }
 .introduction__img {
   margin-bottom: 20px;
@@ -267,7 +267,7 @@ body {
 
 .services {
   padding: 40px 16px;
-  background: url(../../source/img/main_background.jpg) center/cover no-repeat;
+  background: url(../source/img/main_background.jpg) center/cover no-repeat;
 }
 .services__title {
   text-align: center;
