@@ -46,6 +46,7 @@
 .menu {
     position: fixed;
     top: -100%;
+    z-index: 5;
 
     width: 100%;
     height: calc(100% - 60px);
@@ -55,12 +56,14 @@
     background: $white;
     text-align: left;
     &__links {
-        margin-top: 40px;
+        margin: 40px 0;
     }
     &__link {
-        margin-bottom: 32px;
+        &:not(:last-child){
+            margin-bottom: 32px;
+        }
         a {
-            color: #8B9BAB;
+            color: $gray;
         }
     }
     &__buttons {
@@ -75,15 +78,18 @@
         border-radius: 12px;
         border: 1px solid $blue;
 
-        color: $blue;
         background: transparent;
-        
+
+        &-LV {
+            color: $gray;
+        }
     }
 }
 .menu-is-active {
     overflow: hidden;
     & .menu {
         top: 60px;
+        opacity: 1;
     }
     & .menu-burger {
         span:nth-of-type(2){

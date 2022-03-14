@@ -1,0 +1,45 @@
+.services {
+    padding: 40px 16px;
+
+    background: url(../../source/img/main_background.jpg) center/cover no-repeat;
+    &__title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &__item {
+        padding: 20px;
+
+        border: 1px solid #C1D3DE;
+        border-radius: 12px;
+
+        background: $white;
+    }
+    &__service-name {
+        margin-bottom: 8px;
+    }
+    &__desc {
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    &__table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__specs-list, &__value-list {
+        display: grid;
+        grid-template-rows: repeat(11, 1fr);
+    }
+    &__spec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 10px;
+
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700;
+        &:nth-child(odd) {
+            background: #C1D3DE;
+        }
+    }
+}

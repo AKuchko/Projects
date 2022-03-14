@@ -41,10 +41,40 @@ body{
     font-weight: 500;
 	font-size: 16px;
     line-height: 20px;
+	color: #376FFF;
 }
+.title {
+	font-family: Inter;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 36px;
+	letter-spacing: 0em;
+}
+.title-small {
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.simple-text {
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
 
 @import "styles/variables.scss";
 
 @import "styles/header.scss";
 @import "styles/intro.scss";
-
+@import "styles/introduction.scss";
+@import "styles/targets.scss";
+@import "styles/services.scss";

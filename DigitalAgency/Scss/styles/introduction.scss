@@ -1,0 +1,31 @@
+.introduction {
+    padding: 40px $indents;
+
+    background: url(../../source/img/main_background.jpg) center/cover no-repeat;
+    &__img {
+        margin-bottom: 20px;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__right-choice {
+        margin-bottom: 20px;
+        padding: 16px;
+
+        border: 1px solid #C1D3DE;
+        border-radius: 12px;
+        box-sizing: border-box;
+
+        background: rgba(251, 247, 241, 1);
+    }
+    &__box-text:not(:last-child) {
+        margin-bottom: 18px;
+    }
+    &__text{
+        font-family: Roboto;
+        line-height: 26px;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
