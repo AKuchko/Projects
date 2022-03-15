@@ -215,6 +215,9 @@ body {
 }
 .introduction__img {
   margin-bottom: 20px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 .introduction__title {
   margin-bottom: 20px;

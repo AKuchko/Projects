@@ -4,6 +4,8 @@
     background: url(../source/img/main_background.jpg) center/cover no-repeat;
     &__img {
         margin-bottom: 20px;
+        margin-left: 50%;
+        transform: translate(-50%, 0);
     }
     &__title {
         margin-bottom: 20px;
