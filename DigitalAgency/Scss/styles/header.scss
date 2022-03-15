@@ -105,3 +105,9 @@
         }
     }
 }
+@media screen and (orientation: landscape) {
+    .menu {
+        top: -300%;
+        overflow-y: scroll;
+    }
+}
