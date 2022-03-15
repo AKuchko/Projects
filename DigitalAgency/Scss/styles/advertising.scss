@@ -20,9 +20,10 @@
         margin-bottom: 16px;
     }
     &__text {
+        max-height: 140px;
         margin-bottom: 6px;
         overflow: hidden;
-        max-height: 140px;
+        
         transition: all 1s ease-in 0s;
         &-less {
             max-height: 118px;

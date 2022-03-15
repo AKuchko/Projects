@@ -1,3 +1,5 @@
+// const { default: Swiper } = require("swiper");
+
 window.addEventListener('load', init);
 
 const openMenu = () => { // открывание меню
@@ -15,5 +17,23 @@ function init() {
 
     const advertiseItems = document.getElementsByClassName('advertising__btn'); // Массив элементов (button) с классом advertising__btn
     for(item of advertiseItems) item.addEventListener('click', deployment); // Проходим циклом по массиву и добавляем каждому элементу евент 
+
+    const offerSlider = new Swiper('.slider', {
+        loop: false,
+        speed: 1000,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 }
 
