@@ -1,0 +1,28 @@
+.results {
+    padding: 40px 16px;
+    background: url(../source/img/main_background.jpg) center/cover no-repeat;
+    &__title {
+        color: $text-blue;
+    }
+    &__result {
+        display: flex;
+        position: relative;
+        align-items: center;
+        min-height: 48px;
+        padding-left: 56px;
+
+        font-weight: 700;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            left: 0;
+            top: 0;
+            background: url(../source/img/result/icon.svg) center/cover;
+        }
+    }
+}

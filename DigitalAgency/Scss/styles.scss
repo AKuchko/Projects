@@ -44,12 +44,14 @@ body{
 	color: #376FFF;
 }
 .title {
+	margin-bottom: 32px;
 	font-family: Inter;
 	font-size: 28px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: 36px;
 	letter-spacing: 0em;
+    text-align: center;
 }
 .title-small {
 	font-family: Inter;
@@ -81,3 +83,4 @@ body{
 @import "styles/advertising.scss";
 @import "styles/offer.scss";
 @import "styles/stages.scss";
+@import "styles/results.scss";

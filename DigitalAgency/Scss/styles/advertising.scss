@@ -1,9 +1,6 @@
 .advertising {
     padding: 40px 16px;
     &__title {
-        margin-bottom: 32px;
-
-        text-align: center;
         color: $text-blue;
     }
     &__img {
@@ -23,7 +20,7 @@
         max-height: 140px;
         margin-bottom: 6px;
         overflow: hidden;
-        
+
         transition: all 1s ease-in 0s;
         &-less {
             max-height: 118px;
