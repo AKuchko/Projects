@@ -279,6 +279,7 @@ body {
 .services__title {
   text-align: center;
   margin-bottom: 32px;
+  color: #242A56;
 }
 .services__item {
   padding: 20px;
@@ -381,4 +382,46 @@ body {
 }
 .services__min-budget .info-icon {
   margin-bottom: 10px;
+}
+
+.advertising {
+  padding: 40px 16px;
+}
+.advertising__title {
+  margin-bottom: 32px;
+  text-align: center;
+  color: #242A56;
+}
+.advertising__img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.advertising__item {
+  color: #393A56;
+}
+.advertising__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.advertising__name-item {
+  margin-bottom: 16px;
+}
+.advertising__text {
+  margin-bottom: 6px;
+  overflow: hidden;
+  max-height: 140px;
+  -webkit-transition: all 1s ease-in 0s;
+  transition: all 1s ease-in 0s;
+}
+.advertising__text-less {
+  max-height: 118px;
+}
+.advertising__paragraph:not(:last-child) {
+  margin-bottom: 16px;
+}
+.advertising__btn {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-weight: 600;
+  background: transparent;
+  color: #376FFF;
 }

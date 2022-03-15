@@ -1,0 +1,41 @@
+.advertising {
+    padding: 40px 16px;
+    &__title {
+        margin-bottom: 32px;
+
+        text-align: center;
+        color: $text-blue;
+    }
+    &__img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+        color: #393A56;
+    }
+    &__name-item {
+        margin-bottom: 16px;
+    }
+    &__text {
+        margin-bottom: 6px;
+        overflow: hidden;
+        max-height: 140px;
+        transition: all 1s ease-in 0s;
+        &-less {
+            max-height: 118px;
+        }
+    }
+    &__paragraph:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    &__btn {
+        text-decoration-line: underline;
+
+        font-weight: 600;
+        background: transparent;
+        color: $blue;
+    }
+}
