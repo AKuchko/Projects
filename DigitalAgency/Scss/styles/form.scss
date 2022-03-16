@@ -2,4 +2,38 @@
     padding: 40px 20px;
     border-radius: 12px;
     background: $blue;
+    &__title {
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+    &__input {
+        width: 100%;
+        height: 48px;
+        margin-bottom: 9px;
+        &-textarea {
+            height: 120px;
+        }
+    }
+    &__field {
+        width: 100%;
+        height: 100%;
+        padding: 12px 22px;
+
+        border: 2px solid $border-color;
+        border-radius: 12px;
+        
+        color: $white;
+        font-weight: 400;
+        background: transparent;
+        &::placeholder {
+            color: $border-color;
+        }
+    }
+    &__button {
+        background: $white;
+        color: $blue;
+    }
 }

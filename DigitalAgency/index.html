@@ -126,7 +126,7 @@
 					</div>
 					<button class="button services__btn">
 							<p>Заказать</p>
-							<img src="source/img/services/arrow-btn.svg" alt="arrow">
+							<img src="source/img/arrow-btn-white.svg" alt="arrow">
 					</button>
 				</div>
                 <div class="services__item">
@@ -168,7 +168,7 @@
 					</div>
 					<button class="button services__btn">
 							<p>Заказать</p>
-							<img src="source/img/services/arrow-btn.svg" alt="arrow">
+							<img src="source/img/arrow-btn-white.svg" alt="arrow">
 					</button>
 				</div>
 			</div>
@@ -338,14 +338,31 @@
             </div>
         </section>
         <footer class="footer">
-            <form action="submit" class="form footer__form">
+            <form action="/" method="post" class="form footer__form">
                 <h3 class="title form__title">Есть вопросы?</h3>
                 <p class="simple-text form__subtitle">Свяжитесь с нами</p>
                 <ul class="form__inputs">
-                    <li class="input form__input">
-                        <label for="mail" class="input__label form__label">Email:</label>
-                        <input type="email" class="input__field form__field" id="mail" name="user_mail">
+                    <li class="form__input">
+                        <input type="email" id="mail" name="user_mail" placeholder="Email" class="simple-text form__field">
                     </li>
+                    <li class="form__input">
+                        <input type="text" id="name" name="user_name" placeholder="Имя" class="simple-text form__field">
+                    </li>
+                    <li class="form__input form__input-tel">
+                        <!-- <select name="phone type" id="phone" class="form__phone-type-select">
+                            <option value="RU" class="form__select-option" selected>RU</option>
+                            <option value="UK" class="form__select-option">UK</option>
+                            <option value="KZ" class="form__select-option">KZ</option>
+                        </select> -->
+                        <input type="tel" id="phone" name="user_phone" placeholder="Phone" maxlength="18" class="simple-text form__field">
+                    </li>
+                    <li class="form__input form__input-textarea">
+                        <textarea type="text" id="massage" name="user_massage" placeholder="Ваше сообщение" rows="5" cols="30" class="simple-text form__field"></textarea>
+                    </li>
+                    <button type="submit" class="button services__btn form__button">
+                        <p>Заказать</p>
+                        <img src="source/img/arrow-btn-blue.svg" alt="arrow">
+                    </button>
                 </ul>
             </form>
         </footer>
