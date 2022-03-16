@@ -205,7 +205,8 @@ body {
           backdrop-filter: blur(5px);
 }
 .intro__title {
-  margin-bottom: 36px;
+  margin-bottom: 28px;
+  text-align: left;
   font-size: 32px;
 }
 .intro__subtitle {
@@ -517,4 +518,105 @@ body {
   left: 0;
   top: 0;
   background: url(../source/img/result/icon.svg) center/cover;
+}
+
+.clients {
+  padding: 40px 16px;
+}
+.clients__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 71px 10px 71px 10px 71px 10px 71px 10px 71px;
+  grid-template-rows: repeat(5, 71px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-bottom: 32px;
+}
+.clients__list > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.clients__list > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.clients__list > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.clients__list > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.clients__list > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.clients__list > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.clients__list > *:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+.clients__list > *:nth-child(8) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+.clients__list > *:nth-child(9) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+.clients__list > *:nth-child(10) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+}
+.clients__client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #C1D3DE;
+  border-radius: 12px;
+}
+.clients__call {
+  padding: 40px 20px;
+  border-radius: 12px;
+  color: #FFFFFF;
+  background: #376FFF;
+}
+.clients__agitation {
+  margin-bottom: 24px;
+  text-align: left;
+}
+.clients__just-call {
+  margin-bottom: 24px;
+}
+.clients__phone {
+  font-weight: 700;
+  margin: 0;
+  border-bottom: 2px solid #FFFFFF;
+  border-spacing: 10px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.form {
+  padding: 40px 20px;
+  border-radius: 12px;
+  background: #376FFF;
+}
+
+.footer {
+  padding: 40px 16px;
+  background: url("../source/img/main_background.jpg") center/cover no-repeat;
+  color: #FFFFFF;
 }

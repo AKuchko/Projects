@@ -1,0 +1,42 @@
+.clients {
+    padding: 40px 16px;
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 71px);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-bottom: 32px;
+    }
+    &__client {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 2px solid $border-color;
+        border-radius: 12px;
+    }
+    &__call {
+        padding: 40px 20px;
+
+        border-radius: 12px;
+
+        color: $white;
+        background: $blue;
+    }
+    &__agitation {
+        margin-bottom: 24px;
+        text-align: left;
+    }
+    &__just-call {
+        margin-bottom: 24px;
+    }
+    &__phone {
+        font-weight: 700;
+        margin: 0;
+        border-bottom: 2px solid $white;
+        border-spacing: 10px;
+        text-align: left;
+        color: $white
+    }
+}
