@@ -64,7 +64,7 @@ let onPhoneInput = (e) => { // выполняется при вводе в input
     if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
         // Russian phone number
         if (inputNumbersValue[0] == '9') input.value = '7' + inputNumbersValue;
-        let firstSymbols = (inputNumbersValue[0] == '8') ? '8' : '+7';
+        let firstSymbols = (inputNumbersValue[0] == '8') ? ' 8' : '+7';
         formattedInputValue = firstSymbols + ' ';
         if (inputNumbersValue.length > 1) {
             formattedInputValue += '(' + inputNumbersValue.substring(1, 4);

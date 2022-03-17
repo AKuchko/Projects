@@ -349,21 +349,20 @@
                         <input type="text" id="name" name="user_name" placeholder="Имя" class="simple-text form__field">
                     </li>
                     <li class="form__input form__input-tel">
-                        <!-- <select name="phone type" id="phone" class="form__phone-type-select">
-                            <option value="RU" class="form__select-option" selected>RU</option>
-                            <option value="UK" class="form__select-option">UK</option>
-                            <option value="KZ" class="form__select-option">KZ</option>
-                        </select> -->
                         <input type="tel" id="phone" name="user_phone" placeholder="Phone" maxlength="18" class="simple-text form__field">
                     </li>
                     <li class="form__input form__input-textarea">
                         <textarea type="text" id="massage" name="user_massage" placeholder="Ваше сообщение" rows="5" cols="30" class="simple-text form__field"></textarea>
                     </li>
-                    <button type="submit" class="button services__btn form__button">
-                        <p>Заказать</p>
-                        <img src="source/img/arrow-btn-blue.svg" alt="arrow">
-                    </button>
                 </ul>
+                <button type="submit" class="button services__btn form__button">
+                    <p>Заказать</p>
+                    <img src="source/img/arrow-btn-blue.svg" alt="arrow">
+                </button>
+                <div class="checkbox">
+                    <input type="checkbox" id="check" value="accept" class="checkbox__input">
+                    <label for="check" class="checkbox__label"><p>Я прочитал и принимаю условия <a href="/google.com">пользовательского соглашения</a></p></label>
+                </div>
             </form>
         </footer>
     </main>
