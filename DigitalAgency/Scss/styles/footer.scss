@@ -4,4 +4,40 @@
     padding: 40px 16px;
     background: url("../source/img/main_background.jpg") center/cover no-repeat;
     color: $white;
+    &__logo {
+        margin-bottom: 32px;
+    }
+    &__contacts {
+        margin-bottom: 24px;
+    }
+    &__item {
+        margin-bottom: 20px;
+        &-phone-list {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__contact {
+        font-weight: 600;
+        color: $blue;
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+    &__contact-name {
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: $gray;
+    }
+    &__address {
+        color: $text-dark;
+    }
+    &__copyright {
+        color: $gray;
+    }
+}
+
+#map {
+    height: 288px;
+    margin-bottom: 24pxw;
 }

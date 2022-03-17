@@ -611,6 +611,7 @@ body {
 
 .form {
   padding: 40px 20px;
+  margin-bottom: 40px;
   border-radius: 12px;
   background: #376FFF;
 }
@@ -721,4 +722,45 @@ body {
   padding: 40px 16px;
   background: url("../source/img/main_background.jpg") center/cover no-repeat;
   color: #FFFFFF;
+}
+.footer__logo {
+  margin-bottom: 32px;
+}
+.footer__contacts {
+  margin-bottom: 24px;
+}
+.footer__item {
+  margin-bottom: 20px;
+}
+.footer__item-phone-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__contact {
+  font-weight: 600;
+  color: #376FFF;
+}
+.footer__contact:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer__contact-name {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #8B9BAB;
+}
+.footer__address {
+  color: #393A56;
+}
+.footer__copyright {
+  color: #8B9BAB;
+}
+
+#map {
+  height: 288px;
+  margin-bottom: 24pxw;
 }
