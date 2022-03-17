@@ -57,17 +57,6 @@
             border-color: #fff;
             background-color: rgba($color: #fff, $alpha: .9);
         }
-        // &:not(:disabled):active+.checkbox__label::before {
-        //     background-color: #b3d7ff;
-        //     border-color: #b3d7ff;
-        // }
-        // &:focus+.checkbox__label::before {
-        //     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-        // }
-        // &:focus:not(:checked)+.checkbox__label::before {
-        //     border-color: #80bdff;
-        //   }
-        
     }
     &__label {
         display: inline-flex;
