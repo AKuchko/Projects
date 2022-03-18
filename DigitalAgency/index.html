@@ -15,11 +15,9 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <div class="logo">
-                <a href="/Projects/DigitalAgency">
-                    <img src="source/img/logo.svg" alt="Digital Agency">
-                </a>
-            </div>
+            <a href="/Projects/DigitalAgency">
+                <img src="source/img/logo.svg" alt="Digital Agency">
+            </a>
             <div class="menu-burger">
                 <span></span>
                 <span></span>
@@ -28,12 +26,14 @@
         </div>
         <div class="menu">
             <nav class="menu__links">
-                <li class="menu__link"><a href="/Projects/DigitalAgency">Главная </a></li>
-                <li class="menu__link"><a href="#">О нас</a></li>
-                <li class="menu__link"><a href="#">Google Adwords</a></li>
-                <li class="menu__link"><a href="#">SMM</a></li>
-                <li class="menu__link"><a href="#">SEO</a></li>
-                <li class="menu__link"><a href="#">Контакты</a></li>
+                <ul>
+                    <li class="menu__link"><a href="/Projects/DigitalAgency">Главная </a></li>
+                    <li class="menu__link"><a href="#">О нас</a></li>
+                    <li class="menu__link"><a href="#">Google Adwords</a></li>
+                    <li class="menu__link"><a href="#">SMM</a></li>
+                    <li class="menu__link"><a href="#">SEO</a></li>
+                    <li class="menu__link"><a href="#">Контакты</a></li>
+                </ul>
             </nav>
             <div class="menu__buttons">
                 <button class="menu__btn button">Свяжитесь с нами</button>
@@ -89,38 +89,32 @@
 					<h3 class="title-small services__service-name">Малый бизнес</h3>
 					<p class="simple-text services__desc">Бюджет рекламной кампании <b>до 1000 евро</b></p>
 					<div class="services__table">
-						<div class="services__specs-list">
-                            <p class="simple-text services__spec">Стоимость / мес.</p>
-                            <p class="simple-text services__spec">Количество запросов</p>
-                            <p class="simple-text services__spec">Кол-во Обьявлений</p>
-                            <p class="simple-text services__spec">Кол-во кампаний</p>
-						</div>
-						<div class="services__value-list">
-                            <p class="simple-text services__value">100 евро</p>
-                            <p class="simple-text services__value">до 100 запросов</p>
-                            <p class="simple-text services__value">до 100 обьявлений</p>
-                            <p class="simple-text services__value">до 10 кампаний</p>
-						</div>
-					</div>
-                    <div class="services__table services__table-icon">
-						<div class="services__specs-list-icon">
-                            <p class="simple-text services__spec services__spec-icon">Реклама в поиске</p>
-                            <p class="simple-text services__spec services__spec-icon">Реклама в КМС</p>
-                            <p class="simple-text services__spec services__spec-icon">Ретаргетинг</p>
-                            <p class="simple-text services__spec services__spec-icon">Настройка аналитики</p>
-                            <p class="simple-text services__spec services__spec-icon">Google my business аккаунт</p>
-                            <p class="simple-text services__spec services__spec-icon">Баннерная реклама</p>
-                            <p class="simple-text services__spec services__spec-icon">Видеореклама</p>
-						</div>
-						<div class="services__value-list-icon">
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/no.svg" alt="no"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/no.svg" alt="no"></div>
-						</div>
+						<ul class="services__specs-list">
+                            <li class="simple-text services__spec">Стоимость / мес.</li>
+                            <li class="simple-text services__spec">Количество запросов</li>
+                            <li class="simple-text services__spec">Кол-во Обьявлений</li>
+                            <li class="simple-text services__spec">Кол-во кампаний</li>
+                            <li class="simple-text services__spec services__spec-icon">Реклама в поиске</li>
+                            <li class="simple-text services__spec services__spec-icon">Реклама в КМС</li>
+                            <li class="simple-text services__spec services__spec-icon">Ретаргетинг</li>
+                            <li class="simple-text services__spec services__spec-icon">Настройка аналитики</li>
+                            <li class="simple-text services__spec services__spec-icon">Google my business акк-нт</li>
+                            <li class="simple-text services__spec services__spec-icon">Баннерная реклама</li>
+                            <li class="simple-text services__spec services__spec-icon">Видеореклама</li>
+						</ul>
+						<ul class="services__value-list">
+                            <li class="simple-text services__value">100 евро</li>
+                            <li class="simple-text services__value">до 100 запросов</li>
+                            <li class="simple-text services__value">до 100 обьявлений</li>
+                            <li class="simple-text services__value">до 10 кампаний</li>
+                            <li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/no.svg" alt="no"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/no.svg" alt="no"></li>
+						</ul>
 					</div>
 					<button class="button services__btn">
 							<p>Заказать</p>
@@ -131,38 +125,32 @@
 					<h3 class="title-small services__service-name">Средний бизнес</h3>
 					<p class="simple-text services__desc">Бюджет рекламной кампании <b>от 1000 евро</b></p>
 					<div class="services__table">
-						<div class="services__specs-list services__specs-list-hide">
-                            <p class="simple-text services__spec">Стоимость / мес.</p>
-                            <p class="simple-text services__spec">Количество запросов</p>
-                            <p class="simple-text services__spec">Кол-во Обьявлений</p>
-                            <p class="simple-text services__spec">Кол-во кампаний</p>
-						</div>
-						<div class="services__value-list">
-                            <p class="simple-text services__value">10-25% бюджета кампании</p>
-                            <p class="simple-text services__value">до 1000 запросов</p>
-                            <p class="simple-text services__value">до 1000 обьявлений</p>
-                            <p class="simple-text services__value">до 25 кампаний</p>
-						</div>
-					</div>
-                    <div class="services__table services__table-icon">
-						<div class="services__specs-list-icon services__specs-list-hide">
-                            <p class="simple-text services__spec services__spec-icon">Реклама в поиске</p>
-                            <p class="simple-text services__spec services__spec-icon">Реклама в КМС</p>
-                            <p class="simple-text services__spec services__spec-icon">Ретаргетинг</p>
-                            <p class="simple-text services__spec services__spec-icon">Настройка аналитики</p>
-                            <p class="simple-text services__spec services__spec-icon">Google my business аккаунт</p>
-                            <p class="simple-text services__spec services__spec-icon">Баннерная реклама</p>
-                            <p class="simple-text services__spec services__spec-icon">Видеореклама</p>
-						</div>
-						<div class="services__value-list-icon">
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-							<div class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></div>
-						</div>
+						<ul class="services__specs-list services__specs-list-hide">
+                            <li class="simple-text services__spec">Стоимость / мес.</li>
+                            <li class="simple-text services__spec">Количество запросов</li>
+                            <li class="simple-text services__spec">Кол-во Обьявлений</li>
+                            <li class="simple-text services__spec">Кол-во кампаний</li>
+                            <li class="simple-text services__spec services__spec-icon">Реклама в поиске</li>
+                            <li class="simple-text services__spec services__spec-icon">Реклама в КМС</li>
+                            <li class="simple-text services__spec services__spec-icon">Ретаргетинг</li>
+                            <li class="simple-text services__spec services__spec-icon">Настройка аналитики</li>
+                            <li class="simple-text services__spec services__spec-icon">Google my business акк-нт</li>
+                            <li class="simple-text services__spec services__spec-icon">Баннерная реклама</li>
+                            <li class="simple-text services__spec services__spec-icon">Видеореклама</li>
+                        </ul>
+						<ul class="services__value-list">
+                            <li class="simple-text services__value">10-25% бюджета кампании</li>
+                            <li class="simple-text services__value">до 1000 запросов</li>
+                            <li class="simple-text services__value">до 1000 обьявлений</li>
+                            <li class="simple-text services__value">до 25 кампаний</li>
+                            <li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes" ></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+							<li class="services__value services__value-icon"><img src="source/img/services/yes.svg" alt="yes"></li>
+                        </ul>
 					</div>
 					<button class="button services__btn">
 							<p>Заказать</p>
@@ -306,14 +294,14 @@
         </section>
         <section class="results">
             <h2 class="title results__title">Что вы получаете в результате?</h2>
-            <div class="results__list">
-                <p class="simple-text results__result">Увеличение притока потенциальных горячих клиентов с уже определенной и сформированной потребностью</p>
-                <p class="simple-text results__result">Вывод вашего сайта на лидирующие позиции на первой странице результатов поиска с пометкой «реклама»</p>
-                <p class="simple-text results__result">Продуманная рекламная стратегия</p>
-                <p class="simple-text results__result">Постоянный анализ эффективности рекламных кампаний</p>
-                <p class="simple-text results__result">Рекомендации по развитию рекламной стратегии</p>
-                <p class="simple-text results__result">Регулировка уровня затрат</p>
-            </div>
+            <ul class="results__list">
+                <li class="simple-text results__result">Увеличение притока потенциальных горячих клиентов с уже определенной и сформированной потребностью</li>
+                <li class="simple-text results__result">Вывод вашего сайта на лидирующие позиции на первой странице результатов поиска с пометкой «реклама»</li>
+                <li class="simple-text results__result">Продуманная рекламная стратегия</li>
+                <li class="simple-text results__result">Постоянный анализ эффективности рекламных кампаний</li>
+                <li class="simple-text results__result">Рекомендации по развитию рекламной стратегии</li>
+                <li class="simple-text results__result">Регулировка уровня затрат</li>
+            </ul>
         </section>
         <section class="clients">
             <h2 class="title clients__title">Клиенты, которые нам доверяют</h2>
@@ -339,21 +327,21 @@
             <form action="/" method="post" class="form footer__form">
                 <h3 class="title form__title">Есть вопросы?</h3>
                 <p class="simple-text form__subtitle">Свяжитесь с нами</p>
-                <ul class="form__inputs">
-                    <li class="form__input">
+                <div class="form__inputs">
+                    <div class="form__input">
                         <input type="email" id="mail" name="user_mail" placeholder="Email" class="simple-text form__field">
-                    </li>
-                    <li class="form__input">
+                    </div>
+                    <div class="form__input">
                         <input type="text" id="name" name="user_name" placeholder="Имя" class="simple-text form__field">
-                    </li>
-                    <li class="form__input form__input-tel">
-                        <input type="tel" id="phone" name="user_phone" placeholder="Phone" maxlength="18" class="simple-text form__field">
-                    </li>
-                    <li class="form__input form__input-textarea">
-                        <textarea type="text" id="massage" name="user_massage" placeholder="Ваше сообщение" rows="5" cols="30" class="simple-text form__field"></textarea>
-                    </li>
-                </ul>
-                <button type="submit" class="button services__btn form__button">
+                    </div>
+                    <div class="form__input form__input-tel">
+                        <input type="tel" id="phone" name="user_phone" placeholder="+ 7 ( ___ ) ___ - __ - __" maxlength="18" class="simple-text form__field">
+                    </div>
+                    <div class="form__input form__input-textarea">
+                        <textarea id="massage" name="user_massage" placeholder="Ваше сообщение" rows="5" cols="30" class="simple-text form__field"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="button services__btn form__button">  
                     <p>Заказать</p>
                     <img src="source/img/arrow-btn-blue.svg" alt="arrow">
                 </button>
