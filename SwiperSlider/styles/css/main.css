@@ -381,7 +381,7 @@
           transform: translateY(calc(-56%));
   z-index: 2;
   position: absolute;
-  background: url(SwiperSlider/src/icons/slider/gear.svg) center/cover no-repeat;
+  background: url(../src/icons/slider/gear.svg) center/cover no-repeat;
   opacity: 0.04;
   right: calc(24% - 250px);
 }
