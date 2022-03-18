@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Raleway&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <div class="logo__img-wrapper">
+                <img src="src/logo.png" alt="logo" class="logo__img">
+            </div>
+            <p>Вездеход</p>
+        </a>
+        <span class="header__decoration"></span>
+        <div class="header__contacts">
+            <p class="header__contact">Телефон: <a href="tel:555-65-34">555-65-34</a></p>
+            <span class="header__separator"></span>
+            <p class="header__contact header__contact-adres">адрес: <span>ул. московская, 35</span></p>
+        </div>
+        <span class="header__decoration"></span>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <section class="main">
+        <aside class="aside">
+            <figure class="aside__decoration"></figure>
+            <ul class="aside__soc-list">
+                <li class="aside__soc-item">
+                    <a href="#" target="_blank" class="aside__soc-link">
+                        <img src="src/icons/social/vk-brands.svg" alt="social" class="aside__soc-img">
+                    </a>
+                </li>
+                <li class="aside__soc-item">
+                    <a href="#" target="_blank" class="aside__soc-link">
+                        <img src="src/icons/social/twitter-brands.svg" alt="social" class="aside__soc-img">
+                    </a>
+                </li>
+                <li class="aside__soc-item">
+                    <a href="#" target="_blank" class="aside__soc-link">
+                        <img src="src/icons/social/instagram-brands.svg" alt="social" class="aside__soc-img">
+                    </a>
+                </li>
+                <li class="aside__soc-item">
+                    <a href="#" target="_blank" class="aside__soc-link">
+                        <img src="src/icons/social/facebook-brands.svg" alt="social" class="aside__soc-img">
+                    </a>
+                </li>
+            </ul>
+            <div class="aside__share-icon">
+                <img src="src/icons/social/share-solid.svg" alt="share">
+            </div>
+        </aside>
+
+        <div class="slider">
+         
+            <div class="swiper-txt">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-txt__slide">
+                        <div class="swiper-txt__content">
+                            <h2 class="swiper-txt__heading">Подбор внежарожника <span>на любой</span> случай</h2>
+                            <p class="swiper-txt__desc">Выберем и подберем для вас любой внедарожник в кратчайшие сроки, с учетом всех пожеланий и всех необходимых потребностей.</p>
+                            <button class="button swiper-txt__button"><span>оставить заявку</span></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-txt__slide">
+                        <div class="swiper-txt__content">
+                            <h2 class="swiper-txt__heading">Индивидуальный подход <span>к каждому</span> покупателю</h2>
+                            <p class="swiper-txt__desc">все автомобили мы подбираем индивидуально для каждого клиента или покупателя и с трепетом относимся к результату нашей работы.</p>
+                            <button class="button swiper-txt__button"><span>оставить заявку</span></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-txt__slide">
+                        <div class="swiper-txt__content">
+                            <h2 class="swiper-txt__heading">Выбор лучшей модели <span>из модельного</span> ряда</h2>
+                            <p class="swiper-txt__desc">В нашем модельном ряду имеется модели сотен различных внедорожников, которые удовлетворят даже самого требовательного клиента.</p>
+                            <button class="button swiper-txt__button"><span>оставить заявку</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-img">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-img__slide">
+                        <div class="swiper-img__background" data-swiper-parallax="20%" style="background-image: url(src/slider-img/range1.jpg);"></div>
+                    </div>
+                    <div class="swiper-slide swiper-img__slide">
+                        <div class="swiper-img__background" data-swiper-parallax="20%" style="background-image: url(src/slider-img/range2.jpg);"></div>
+                    </div>
+                    <div class="swiper-slide swiper-img__slide">
+                        <div class="swiper-img__background" data-swiper-parallax="20%" style="background-image: url(src/slider-img/range3.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider__bottom">
+                <ul class="slider__share-items">
+                    <li class="aside__soc-item slider__share-item">
+                        <a href="#" target="_blank" class="aside__soc-link">
+                            <img src="src/icons/social/vk-brands.svg" alt="social" class="aside__soc-img">
+                        </a>
+                    </li>
+                    <li class="aside__soc-item slider__share-item">
+                        <a href="#" target="_blank" class="aside__soc-link">
+                            <img src="src/icons/social/vk-brands.svg" alt="social" class="aside__soc-img">
+                        </a>
+                    </li>
+                    <li class="aside__soc-item slider__share-item">
+                        <a href="#" target="_blank" class="aside__soc-link">
+                            <img src="src/icons/social/vk-brands.svg" alt="social" class="aside__soc-img">
+                        </a>
+                    </li>
+                </ul>
+                <div class="slider-pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="slider-scrollbar">
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="slider-navigation">
+                    <div class="slider-navigation__container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>  
+                </div>    
+            </div>
+
+            <div class="slider-counter">
+                <span class="current">01</span> / <span class="total">03</span>
+            </div>
+
+            <div class="slider-current"><span class="slider-current__num">01</span><span class="slider-current__dot">.</span></div>
+
+            <figure class="slider-gear"></figure>
+        </div>
+    </section>
+</body>
+</html>  

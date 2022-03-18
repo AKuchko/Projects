@@ -48,7 +48,7 @@
         opacity: 0;
         &:checked+.checkbox__label::before {
             background-color: $border-color;
-            background-image: url(../../source/img/check-solid.svg);
+            background-image: url(../source/img/check-solid.svg);
             background-size: cover;
         }
         &:not(:disabled):not(:checked)+.checkbox__label:hover::before{
