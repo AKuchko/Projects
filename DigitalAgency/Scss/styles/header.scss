@@ -55,6 +55,9 @@
     transition: all 0.3s ease-in-out 0s;
     background: $white;
     text-align: left;
+    &__wrapper {
+        width: 288px;
+    }
     &__links {
         margin: 40px 0;
     }

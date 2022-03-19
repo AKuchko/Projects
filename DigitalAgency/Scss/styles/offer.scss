@@ -55,3 +55,14 @@
 .swiper-slide {
     border-top: 2px solid #8B9BAB;
 }
+@media screen and (min-device-width: 1024px) {
+    .offer {
+        padding: 60px 40px;
+    }
+    .slider__bottom {
+        display: none;
+    }
+    .swiper-wrapper {
+        margin: 0;
+    }
+}

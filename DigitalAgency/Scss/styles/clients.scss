@@ -1,5 +1,8 @@
 .clients {
     padding: 40px 16px;
+    &__title {
+        color: $text-blue;
+    }
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -32,11 +35,40 @@
         margin-bottom: 24px;
     }
     &__phone {
-        font-weight: 700;
-        margin: 0;
-        border-bottom: 2px solid $white;
-        border-spacing: 10px;
-        text-align: left;
-        color: $white
+        a {
+            font-weight: 700;
+            margin: 0;
+            border-bottom: 2px solid $white;
+            border-spacing: 10px;
+            text-align: left;
+            color: $white
+        }
+    }
+}
+@media screen and (min-device-width: 1024px) {
+    .clients {
+        padding: 60px 40px;
+    }
+    .clients__list {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .clients__call {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .clients__call {
+        padding: 60px;
+    }
+    .clients__phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            font-size: 40px;
+            line-height: 48px;
+        }
     }
 }

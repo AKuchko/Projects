@@ -12,6 +12,7 @@
         padding-left: 56px;
 
         font-weight: 700;
+        color: $text-dark;
         &:not(:last-child) {
             margin-bottom: 20px;
         }
@@ -23,6 +24,30 @@
             left: 0;
             top: 0;
             background: url(../source/img/result/icon.svg) center/cover;
+        }
+    }
+}
+@media screen and (min-device-width: 1024px) {
+    .results {
+        padding: 60px 40px;
+        background-image: url(../source/img/main_backgound-1024.jpg);
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+        }
+        &__result {
+            padding-left: 80px;
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+            &:nth-last-child(2) {
+                margin: 0;
+            }
+            &::after {
+                width: 60px;
+                height: 60px;
+            }
         }
     }
 }

@@ -5,5 +5,18 @@
     &__title {
         color: $text-blue;
     }
-    
+}
+@media screen and (min-device-width: 1024px) {
+    .stages {
+        padding: 60px 40px;
+        .swiper-slide {
+            margin-bottom: 40px;
+        }
+    }    
+    .stages__slider {
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }

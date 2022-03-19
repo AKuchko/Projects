@@ -27,3 +27,21 @@
         letter-spacing: 0em;
     }
 }
+
+@media screen and (min-device-width: 1024px) {
+
+    .intro {
+        &__wrapper {
+            padding: 101px 40px;
+        }
+        &__title {
+            font-size: 68px;
+            line-height: 79px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    
+}

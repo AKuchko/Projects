@@ -8,8 +8,9 @@
     }
     &__title {
         margin-bottom: 20px;
+        color: $text-blue;
     }
-    &__right-choice {
+    &__block {
         margin-bottom: 20px;
         padding: 16px;
 
@@ -19,9 +20,6 @@
 
         background: rgba(251, 247, 241, 1);
     }
-    &__box-text:not(:last-child) {
-        margin-bottom: 18px;
-    }
     &__text{
         font-family: Roboto;
         line-height: 26px;
@@ -29,4 +27,30 @@
             margin-bottom: 10px;
         }
     }
+}
+.block {
+    &__text:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+
+    .introduction {
+        padding: 60px 40px;
+        background: url(../source/img/main_backgound-1024.jpg) center;
+        &__title {
+            margin-bottom: 24px;
+        }
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__block {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin-bottom: 24px;
+        }
+    }
+    
 }

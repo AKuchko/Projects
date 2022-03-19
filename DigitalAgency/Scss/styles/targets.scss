@@ -1,5 +1,8 @@
 .targets {
     padding: 40px 16px;
+    &__title {
+        color: $text-blue;
+    }
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -10,9 +13,25 @@
         margin-left: 50%;
         transform: translate(-50%, 0);
         margin-bottom: 20px;
+        padding: 6px;
+
+        border: 1px solid $border-color;
+        border-radius: 12px;
     }
     &__item-title {
         text-align: center;
         font-weight: 700;
+        color: $text-dark;
+    }
+}
+@media screen and (min-device-width: 1024px) {
+    .targets {
+        padding: 60px 40px;
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &__icon {
+            padding: 30px;
+        }
     }
 }

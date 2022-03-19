@@ -1,5 +1,7 @@
 // const { default: Swiper } = require("swiper");
 
+// const { default: Swiper } = require("swiper");
+
 window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.menu-burger').addEventListener('click', openMenu); // Добавление евента на "бургер"
 
@@ -29,6 +31,38 @@ window.addEventListener('DOMContentLoaded', function() {
             el: '.swiper-pagination',
             clickable: true,
         },
+        breakpoints: {
+            1024: {
+              slidesPerView: 4,
+              spaceBetween:20,
+              enabled: false,
+            }
+        }
+    });
+
+    const stagesSlider = new Swiper('.stages__slider', {
+        loop: false,
+        speed: 1000,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            1024: {
+              slidesPerView: 3,
+              spaceBetween:20,
+              enabled: false,
+            }
+        }
     });
 
     ymaps.ready(startYandexMap);

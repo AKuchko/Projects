@@ -25,19 +25,21 @@
             </div>
         </div>
         <div class="menu">
-            <nav class="menu__links">
-                <ul>
-                    <li class="menu__link"><a href="/Projects/DigitalAgency">Главная </a></li>
-                    <li class="menu__link"><a href="#">О нас</a></li>
-                    <li class="menu__link"><a href="#">Google Adwords</a></li>
-                    <li class="menu__link"><a href="#">SMM</a></li>
-                    <li class="menu__link"><a href="#">SEO</a></li>
-                    <li class="menu__link"><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="menu__buttons">
-                <button class="menu__btn button">Свяжитесь с нами</button>
-                <button class="menu__btn menu__btn-LV button">LV</button>
+            <div class="menu__wrapper">
+                <nav class="menu__links">
+                    <ul>
+                        <li class="menu__link"><a href="/Projects/DigitalAgency">Главная </a></li>
+                        <li class="menu__link"><a href="#">О нас</a></li>
+                        <li class="menu__link"><a href="#">Google Adwords</a></li>
+                        <li class="menu__link"><a href="#">SMM</a></li>
+                        <li class="menu__link"><a href="#">SEO</a></li>
+                        <li class="menu__link"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="menu__buttons">
+                    <button class="menu__btn button">Свяжитесь с нами</button>
+                    <button class="menu__btn menu__btn-LV button">LV</button>
+                </div>
             </div>
         </div>
     </header>
@@ -49,35 +51,41 @@
             </div>
         </section>
         <section class="introduction">
-            <img src="source/img/long-intro/introduction.png" alt="computers" class="introduction__img">
-            <h2 class="title-small introduction__title">Вы хотите улучшить результаты своих рекламных кампаний, сократить стоимость привлечения потенциального клиента и/или повысить возврат инвестиций (ROI) от рекламы в системе Google?</h2>
-            <div class="introduction__right-choice">
-                <img src="source/img/long-intro/icon.svg" alt="praise" class="introduction__icon">
-                <p class="simple-text introduction__box-text">Вы, определенно, попали в правильное место!</p>
-                <p class="simple-text introduction__box-text">Специализация нашей команды – реклама в Google.</p>
-            </div>
-            <div class="introduction__short-review">
-                <p class="simple-text introduction__text">Наше агентство занимается разработкой и внедрением стратегий таргетированной, контекстной и поисковой рекламы в Google. Мы помогаем малому бизнесу в Латвии наладить бесперебойный поток коммерческих сообщений до целевой аудитории.</p>
-                <p class="simple-text introduction__text">Для этого мы используем весь инструментарий Google рекламы, сопровождая пользователя от формирования потребности до осуществления целевых действий.</p>
+            <div class="introduction__wrapper">
+                <img src="source/img/long-intro/introduction.png" alt="computers" class="introduction__img">
+                <div class="introduction__text">
+                    <h2 class="title-small introduction__title">Вы хотите улучшить результаты своих рекламных кампаний, сократить стоимость привлечения потенциального клиента и/или повысить возврат инвестиций (ROI) от рекламы в системе Google?</h2>
+                    <div class="introduction__block block">
+                        <img src="source/img/long-intro/icon.svg" alt="praise" class="block__icon">
+                        <div class="block__wrapper">
+                            <p class="simple-text block__text">Вы, определенно, попали в правильное место!</p>
+                            <p class="simple-text block__text">Специализация нашей команды – реклама в Google.</p>
+                        </div>
+                    </div>
+                    <div class="introduction__short-review">
+                        <p class="simple-text introduction__text">Наше агентство занимается разработкой и внедрением стратегий таргетированной, контекстной и поисковой рекламы в Google. Мы помогаем малому бизнесу в Латвии наладить бесперебойный поток коммерческих сообщений до целевой аудитории.</p>
+                        <p class="simple-text introduction__text">Для этого мы используем весь инструментарий Google рекламы, сопровождая пользователя от формирования потребности до осуществления целевых действий.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="targets">
             <h2 class="title targets__title">Кому мы показываем рекламу в Google?​</h2>
             <div class="targets__list">
                 <div class="targets__item">
-                    <img src="source/img/targets/1.svg" alt="target" class="targets__icon">
+                    <img src="source/img/targets/icon1.svg" alt="target" class="targets__icon">
                     <h3 class="simple-text targets__item-title">Тем, кто ищет в поиске Google Вашу компанию</h3>
                 </div>
                 <div class="targets__item">
-                    <img src="source/img/targets/2.svg" alt="target" class="targets__icon">
+                    <img src="source/img/targets/icon2.svg" alt="target" class="targets__icon">
                     <h3 class="simple-text targets__item-title">Тем, кто ищет в поиске Google ваш продукт или услугу</h3>
                 </div>
                 <div class="targets__item">
-                    <img src="source/img/targets/3.svg" alt="target" class="targets__icon">
+                    <img src="source/img/targets/icon3.svg" alt="target" class="targets__icon">
                     <h3 class="simple-text targets__item-title">Тем, кто уже был на вашем сайте</h3>
                 </div>
                 <div class="targets__item">
-                    <img src="source/img/targets/4.svg" alt="target" class="targets__icon">
+                    <img src="source/img/targets/icon4.svg" alt="target" class="targets__icon">
                     <h3 class="simple-text targets__item-title">Тем, кто ищет в поиске Google решение своей проблемы</h3>
                 </div>
             </div>
@@ -85,7 +93,7 @@
         <section class="services">
             <h2 class="title services__title">Стоимость услуг</h2>
 			<div class="services__list">
-				<div class="services__item">
+				<div class="services__item services__item-one">
 					<h3 class="title-small services__service-name">Малый бизнес</h3>
 					<p class="simple-text services__desc">Бюджет рекламной кампании <b>до 1000 евро</b></p>
 					<div class="services__table">
@@ -165,10 +173,12 @@
         </section>
         <section class="advertising">
             <h2 class="title advertising__title">Что такое реклама в Google?</h2>
-            <div class="advertising__item">
-                <img src="source/img/advertising/img.png" alt="search advertising" class="advertising__img">
-                <h3 class="title-small advertising__name-item">Поисковая реклама</h3>
+            <div class="advertising__item advertising__item-right">
+                <div class="advertising__img">
+                    <img src="source/img/advertising/img.png" alt="search advertising">
+                </div>
                 <div class="advertising__text">
+                    <h3 class="title-small advertising__name-item">Поисковая реклама</h3>
                     <p class="simple-text advertising__paragraph">Данные объявления показываются потенциальным клиентам по введенным ключевым запросам в поисковой строке Google, которые рекламодатель добавил в рекламную кампанию.</p>
                     <p class="simple-text advertising__paragraph">Рассчитана на людей с уже определенной потребностью или проблемой — по сути, это своего рода ответ на запрос пользователя в поисковой строке в виде текстового сообщения.</p>
                     <p class="simple-text advertising__paragraph">Данный вид рекламы является основополагающим для получения «горячего» трафика (захода людей на сайт) со сформированным спросом и готовых к покупке.</p>
@@ -176,28 +186,34 @@
                 <button class="simple-text advertising__btn">Развернуть</button>
             </div>
             <div class="advertising__item">
-                <img src="source/img/advertising/img2.png" alt="search advertising" class="advertising__img">
-                <h3 class="title-small advertising__name-item">Баннерная реклама</h3>
+                <div class="advertising__img">
+                    <img src="source/img/advertising/img2.png" alt="search advertising">
+                </div>
                 <div class="advertising__text">
+                    <h3 class="title-small advertising__name-item">Баннерная реклама</h3>
                     <p class="simple-text advertising__paragraph">Позволяет увеличить охват аудитории. Показывается на различных информационных сайтах-партнерах Google и выглядит как статический или динамический баннер с коммерческим предложением.</p>
                     <p class="simple-text advertising__paragraph">Показы объявлений можно настроить очень гибко: по социально-демографическим, возрастным, поведенческим характеристикам, по интересам пользователей и другим критериям.</p>
                     <p class="simple-text advertising__paragraph">Данная реклама максимально эффективна, когда необходимо охватить максимально большую аудиторию людей для увеличения узнаваемости бренда, компании, отдельной линейки и т.д..</p>
                 </div>
                 <button class="simple-text advertising__btn">Развернуть</button>
             </div>
-            <div class="advertising__item">
-                <img src="source/img/advertising/img3.png" alt="search advertising" class="advertising__img">
-                <h3 class="title-small advertising__name-item">Видеореклама</h3>
+            <div class="advertising__item  advertising__item-right">
+                <div class="advertising__img">
+                    <img src="source/img/advertising/img3.png" alt="search advertising">
+                </div>
                 <div class="advertising__text advertising__text-less">
+                    <h3 class="title-small advertising__name-item">Видеореклама</h3>
                     <p class="simple-text advertising__paragraph">Видеореклама формирует в глазах человека образ бренда, вовлекает в рекламный посыл при сравнительно недорогой стоимости контакта с ЦА.</p>
                     <p class="simple-text advertising__paragraph">Инструмент отлично работает на узнаваемость продукта и возникновение потребности у потенциального потребителя.</p>
                 </div>
                 <button class="simple-text advertising__btn">Развернуть</button>
             </div>
             <div class="advertising__item">
-                <img src="source/img/advertising/img4.png" alt="search advertising" class="advertising__img">
-                <h3 class="title-small advertising__name-item">Ремаркетинг и ретаргетинг</h3>
+                <div class="advertising__img">
+                    <img src="source/img/advertising/img4.png" alt="search advertising">
+                </div>
                 <div class="advertising__text advertising__text-less">
+                    <h3 class="title-small advertising__name-item">Ремаркетинг и ретаргетинг</h3>
                     <p class="simple-text advertising__paragraph">Большинству людей, которые заходят на ваш сайт, как правило, необходимо больше одного визита, чтобы совершить целевое действие (например: сделать покупку).</p>
                     <p class="simple-text advertising__paragraph">Процент посетителей, которые совершают целевое действие при первом визите на сайт, зависит от вида бизнеса, но в среднем не превышает 30%. Что в таком случае делать с остальными посетителями, которые просто закрыли ваш сайт? Как их вернуть на сайт и конвертировать в клиентов? Для этого и нужен ремаркетинг.</p>
                     <p class="simple-text advertising__paragraph">Ремаркетинг используется для возвращения пользователей, которые просматривали ваш сайт или взаимодействовали с вашей рекламой, но не совершили покупку, а также для стимулирования повторных продаж.</p>
@@ -246,7 +262,7 @@
         </section>
         <section class="stages">
             <h2 class="title stages__title">Этапы работы</h2>
-            <div class="swiper slider">
+            <div class="swiper stages__slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="source/img/stages/stages-icon.svg" alt="stage" class="slider__img">
@@ -318,9 +334,13 @@
                 <div class="clients__client"><img src="source/img/clients/client_logo10.png" alt="Airtable" class="clients__img"></div>
             </div>
             <div class="clients__call">
-                <h2 class="title clients__agitation">Хотите чтобы мы поучаствовали в развитии Вашего проекта?</h2>
-                <p class="simple-text clients__just-call">Просто позвоните нам!</p>
-                <a href="tel:37100000000" class="title clients__phone">+371 0000 0000</a>
+                <div class="clients__text">
+                    <h2 class="title clients__agitation">Хотите чтобы мы поучаствовали в развитии Вашего проекта?</h2>
+                    <p class="simple-text clients__just-call">Просто позвоните нам!</p>
+                </div>
+                <div class="clients__phone">
+                    <a href="tel:37100000000" class="title">+371 0000 0000</a>
+                </div>
             </div>
         </section>
         <footer class="footer">
@@ -350,24 +370,28 @@
                     <label for="check" class="checkbox__label"><p>Я прочитал и принимаю условия <a href="#">пользовательского соглашения</a></p></label>
                 </div>
             </form>
-            <img src="source/img/logo.svg" alt="DigitalAgency" class="footer__logo">
             <div class="footer__contacts">
-                <div class="footer__item footer__item-phone-list">
-                    <p class="simple-text footer__contact-name">Телефон</p>
-                    <a href="tel:0019876543210" class="title-small footer__contact">+001 987-654-3210</a>
-                    <a href="tel:0019876543210" class="title-small footer__contact">+001 987-654-3210</a>
-                </div>
-                <div class="footer__item">
-                    <p class="simple-text footer__contact-name">Email</p>
-                    <a href="mailto:info@example.com" class="title-small footer__contact">info@example.com</a>
-                </div>
-                <div class="footer__item">
-                    <p class="simple-text footer__contact-name">Адрес</p>
-                    <p class="title-small footer__contact footer__address">123/B, Route 66, Downtown, Washington, DC 20004, US</p>
+                <img src="source/img/logo.svg" alt="DigitalAgency" class="footer__logo">
+                <div class="footer__items">
+                    <div class="footer__item footer__item-phone">
+                        <p class="simple-text footer__contact-name">Телефон</p>
+                        <div class="footer__phones">
+                            <a href="tel:0019876543210" class="title-small footer__contact">+001 987-654-3210</a>
+                            <a href="tel:0019876543210" class="title-small footer__contact">+001 987-654-3210</a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <p class="simple-text footer__contact-name">Email</p>
+                        <a href="mailto:info@example.com" class="title-small footer__contact">info@example.com</a>
+                    </div>
+                    <div class="footer__item">
+                        <p class="simple-text footer__contact-name">Адрес</p>
+                        <p class="title-small footer__contact footer__address">123/B, Route 66, Downtown, Washington, DC 20004, US</p>
+                    </div>
                 </div>
                 <div class="footer__map" id="map"></div>
             </div>
-            <p class="simple-text footer__copyright">SIA OL © Visas tiesības aizsargātas 2021</p>
+            <p class="simple-text footer__copyright">SIA OL © Visas tiesības aizsargātas 2022</p>
         </footer>
     </main>
 </body>

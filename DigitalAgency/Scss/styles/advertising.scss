@@ -37,3 +37,38 @@
         color: $blue;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .advertising {
+        padding: 60px 40px;
+        &__item {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+            &-right {
+                flex-direction: row-reverse;
+            }
+            &-right .advertising__text {
+                margin-right: 20px;
+            }
+            & .advertising__img {
+                margin-right: 20px;
+            }
+        }
+        &__img {
+            width: 542px;
+            img {
+                width: 100%;
+            }
+        }
+        &__text {
+            max-height: 500px;
+            width: 382px;
+        }
+        &__btn {
+            display: none;
+        }
+    }
+}

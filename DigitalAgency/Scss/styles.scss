@@ -72,6 +72,12 @@ body{
 	text-align: left;
 }
 
+@media screen and (min-device-width: 1024px) {
+	.title {
+		margin-bottom: 40px
+	}
+}
+
 
 @import "styles/variables.scss";
 
