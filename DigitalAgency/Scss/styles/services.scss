@@ -1,6 +1,6 @@
 .services {
-    padding: 40px 16px;
     background: url(../source/img/main_background.jpg) center/cover no-repeat;
+    color: #393A56;
     &__title {
         color: $text-blue;
     }
@@ -24,9 +24,6 @@
         display: grid;
         grid-template-columns: 0.9fr 1fr;
         margin-bottom: 20px;
-
-        color: #393A56;
-   
     }
     &__specs-list-hide {
         display: none;
@@ -90,40 +87,72 @@
         }
     }
 }
+
 @media screen and (min-device-width: 1024px) {
     .services {
-        padding: 60px 40px;
         background: url(../source/img/main_backgound-1024.jpg) center;
-        &__list {
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 20px;
-            margin-bottom: 40px;
-        }
-        &__item {
-            padding: 40px 20px 20px 20px ;
-            &-one {
-                grid-column: 2 / 3;
-            }
-        }
-        &__table {
-            grid-template-columns: 100% 100% ;
-        }
-        &__specs-list {
-            position: absolute;
-            left: 0;
-            width: 31.886%;
-            &-hide {
-                display: none;
-            }
-        }
-        &__value {
-            padding-left: 20px;
-            &-icon {
-                justify-content: flex-start;
-            }
+    }
+    .services__list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        margin-bottom: 40px;
+    }
+    .services__item {
+        padding: 40px 20px 20px 20px ;
+        min-width: 301px;
+        &-one {
+            grid-column: 2 / 3;
         }
     }
-    
+    .services__table {
+        grid-template-columns: 100% 100% ;
+    }
+    .services__specs-list {
+        position: absolute;
+        left: 0;
+        min-width: 301px;
+        &-hide {
+            display: none;
+        }
+    }
+    .services__spec {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .services__value {
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        &-icon {
+            justify-content: flex-start;
+        }
+    }
+    .services__min-budget {
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 20px 0 0;
+        }
+    }
+}
+
+@media screen and (min-device-width: 1920px) {
+    .services__item {
+        padding: 40px;
+        min-width: 440px;
+    }
+    .services__specs-list {
+        min-width: 440px;
+    }
+    .services__list {
+        grid-column-gap: 40px;
+    }  
+    .services__min-budget {
+        padding: 40px;
+    } 
 }

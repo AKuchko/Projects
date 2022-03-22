@@ -1,5 +1,4 @@
 .advertising {
-    padding: 40px 16px;
     &__title {
         color: $text-blue;
     }
@@ -39,36 +38,55 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .advertising {
-        padding: 60px 40px;
-        &__item {
-            display: flex;
-            align-items: center;
-            &:not(:last-child) {
-                margin-bottom: 50px;
-            }
-            &-right {
-                flex-direction: row-reverse;
-            }
-            &-right .advertising__text {
-                margin-right: 20px;
-            }
-            & .advertising__img {
-                margin-right: 20px;
-            }
+    .advertising__item {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 50px;
         }
-        &__img {
-            width: 542px;
-            img {
-                width: 100%;
-            }
+        &-right {
+            flex-direction: row-reverse;
         }
-        &__text {
-            max-height: 500px;
-            width: 382px;
+        &-right .advertising__img {
+            margin: 0 0 0 20px;
         }
-        &__btn {
-            display: none;
+        & .advertising__img {
+            margin: 0 20px 0 0;
         }
+    }
+    .advertising__img {
+        min-width: 542px;
+        img {
+            width: 100%;
+        }
+    }
+    .advertising__text {
+        max-height: 500px;
+        min-width: 382px;
+    }
+    .advertising__btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) { 
+    .advertising__item {
+        &:not(:last-child) {
+            margin-bottom: 80px;
+        }
+        &-right .advertising__img {
+            // margin-left: 41px;
+            margin: 0 0 0 41px;
+        }
+        & .advertising__img {
+            // margin-right: 41px;
+            margin: 0 41px 0 0;
+        }
+    }
+    .advertising__img {
+        min-width: 799px;
+    }
+    .advertising__text {
+        min-width: 560px;
     }
 }

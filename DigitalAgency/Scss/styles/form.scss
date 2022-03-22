@@ -16,6 +16,9 @@
         margin-bottom: 9px;
         &-textarea {
             height: 120px;
+            textarea  {
+                resize: none;
+            }
         }
     }
     &__field {
@@ -81,6 +84,22 @@
             background-position: center center;
             background-size: 50% 50%;
             transition: all 0.3s ease 0s;
+        }
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    .form {
+        &__input {
+            height: 60px;
+            margin-bottom: 12px;
+            &-textarea {
+                height: 120px;
+            }
+        }
+        &__button {
+            height: 60px;
+            margin-bottom: 20px;
         }
     }
 }

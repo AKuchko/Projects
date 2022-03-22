@@ -1,5 +1,4 @@
 .clients {
-    padding: 40px 16px;
     &__title {
         color: $text-blue;
     }
@@ -46,9 +45,9 @@
     }
 }
 @media screen and (min-device-width: 1024px) {
-    .clients {
-        padding: 60px 40px;
-    }
+    // .clients {
+    //     padding: 60px 40px;
+    // }
     .clients__list {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr 1fr;

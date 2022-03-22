@@ -1,5 +1,4 @@
 .stages {
-    padding: 40px 16px;
     background: #fff;
     color: $text-dark;
     &__title {
@@ -8,7 +7,7 @@
 }
 @media screen and (min-device-width: 1024px) {
     .stages {
-        padding: 60px 40px;
+        // padding: 60px 40px;
         .swiper-slide {
             margin-bottom: 40px;
         }

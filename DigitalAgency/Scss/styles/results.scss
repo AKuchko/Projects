@@ -1,5 +1,4 @@
 .results {
-    padding: 40px 16px;
     background: url(../source/img/main_background.jpg) center/cover no-repeat;
     &__title {
         color: $text-blue;
@@ -29,7 +28,7 @@
 }
 @media screen and (min-device-width: 1024px) {
     .results {
-        padding: 60px 40px;
+        // padding: 60px 40px;
         background-image: url(../source/img/main_backgound-1024.jpg);
         &__list {
             display: grid;

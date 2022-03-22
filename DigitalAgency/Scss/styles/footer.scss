@@ -40,6 +40,9 @@
 #map {
     height: 288px;
     margin-bottom: 24pxw;
+    .ymaps-2-1-79-map {
+        border-radius: 12px;
+    }
     .ymaps-2-1-79-inner-panes {
         border-radius: 12px;
     }
@@ -49,8 +52,11 @@
     .footer {
         padding: 60px 40px 40px 40px;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 48.941% 48.941%;
+        grid-template-rows: 88.5%;
         grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        background: url(../source/img/main_backgound-1024.jpg);
         &__contacts {
             grid-column: 1 /1;
             grid-row: 1/1;
@@ -69,7 +75,7 @@
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-column-gap: 20px;
-        grid-row-gap: 40px;
+        grid-row-gap: 8px;
         margin-bottom: 40px;
     }
     .footer__item-phone {
@@ -84,6 +90,7 @@
     }
     #map {
         height: 320px;
+        width: 100%;
         margin: 0;
     }
 }

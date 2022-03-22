@@ -8,7 +8,6 @@
     &__wrapper {
         width: 100%;
         height: 100%;
-        padding: 40px $indents 64px $indents;
 
         background: rgba(36, 42, 86, 0.7);
         backdrop-filter: blur(5px);
@@ -29,11 +28,11 @@
 }
 
 @media screen and (min-device-width: 1024px) {
-
     .intro {
-        &__wrapper {
-            padding: 101px 40px;
-        }
+        margin-top: 80px;
+        // &__wrapper {
+        //     padding: 101px 40px;
+        // }
         &__title {
             font-size: 68px;
             line-height: 79px;
@@ -42,6 +41,5 @@
             font-size: 20px;
             line-height: 28px;
         }
-    }
-    
+    } 
 }

@@ -1,5 +1,4 @@
 .targets {
-    padding: 40px 16px;
     &__title {
         color: $text-blue;
     }
@@ -26,7 +25,6 @@
 }
 @media screen and (min-device-width: 1024px) {
     .targets {
-        padding: 60px 40px;
         &__list {
             grid-template-columns: repeat(4, 1fr);
         }

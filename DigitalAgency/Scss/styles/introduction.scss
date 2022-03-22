@@ -1,10 +1,12 @@
 .introduction {
-    padding: 40px $indents;
-
+    color: $text-dark;
     background: url(../source/img/main_background.jpg) center/cover no-repeat;
     &__img {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 288px;
+        margin: 0 auto 20px auto;
+        img {
+            width: 100%;
+        }
     }
     &__title {
         margin-bottom: 20px;
@@ -22,8 +24,9 @@
     }
     &__text{
         font-family: Roboto;
-        line-height: 26px;
-        &:not(:last-child) {
+    }
+    &__short-review {
+        .simple-text:not(:last-child) {
             margin-bottom: 10px;
         }
     }
@@ -32,25 +35,62 @@
     &__text:not(:last-child) {
         margin-bottom: 18px;
     }
+    &__icon {
+        width: 75px;
+    }
 }
 
 @media screen and (min-device-width: 1024px) {
-
     .introduction {
-        padding: 60px 40px;
         background: url(../source/img/main_backgound-1024.jpg) center;
-        &__title {
-            margin-bottom: 24px;
-        }
         &__wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px ;
+        }
+        &__img {
+            margin: 0;
+            width: 462px;
+            height: 462px;
+            align-self: center;
+            justify-self: center;
+        }
+        &__text {
+            align-self: center;
+            justify-self: center;
         }
         &__block {
             display: grid;
             grid-template-columns: 20% 80%;
             margin-bottom: 24px;
         }
-    }
-    
+    } 
+}
+
+@media screen and (min-device-width: 1920px) {
+    .introduction {
+        background: url(../source/img/main_backgound-1024.jpg) center;
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__short-review {
+            .simple-text:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__wrapper {
+            grid-column-gap: 40px;
+        }
+        &__img {
+            margin: 0;
+            width: 680px;
+            height: 680px;
+        }
+        &__block {
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+    } 
 }

@@ -36,6 +36,9 @@ body{
 	font-size: 16px;
     line-height: 20px;
 }
+.container {
+	padding: 40px 16px;
+}
 .button {
     font-family: Inter;
     font-weight: 500;
@@ -73,11 +76,32 @@ body{
 }
 
 @media screen and (min-device-width: 1024px) {
+	.container {
+		padding: 60px 40px;
+	}
 	.title {
 		margin-bottom: 40px
 	}
 }
 
+@media screen and (min-device-width: 1920px) {
+	.container {
+		padding: 80px 261px;
+	}
+	.title {
+		margin-bottom: 60px;
+		font-size: 38px;
+		line-height: 40px;
+	}
+	.title-small {
+		font-size: 26px;
+		line-height: 33.8px;
+	}
+	.simple-text {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
 
 @import "styles/variables.scss";
 

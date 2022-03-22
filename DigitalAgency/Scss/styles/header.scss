@@ -7,7 +7,7 @@
 
         width: 100%;
         height: 60px;
-        padding: 0 $indents;
+        padding: 0 16px;
 
         border-bottom: 1px solid #8B9BAB;
 
@@ -50,7 +50,7 @@
 
     width: 100%;
     height: calc(100% - 60px);
-    padding: 0 $indents;
+    padding: 0 16px;
 
     transition: all 0.3s ease-in-out 0s;
     background: $white;
@@ -112,5 +112,11 @@
     .menu {
         top: -300%;
         overflow-y: scroll;
+    }
+}
+
+@media screen and (min-device-width: 1024px) {
+    .header__wrapper {
+        height: 80px;
     }
 }
