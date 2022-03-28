@@ -36,6 +36,11 @@ window.addEventListener('DOMContentLoaded', function() {
               slidesPerView: 4,
               spaceBetween:20,
               enabled: false,
+            },
+            1920: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                enabled: false
             }
         }
     });
@@ -61,6 +66,11 @@ window.addEventListener('DOMContentLoaded', function() {
               slidesPerView: 3,
               spaceBetween:20,
               enabled: false,
+            }, 
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                enabled: false
             }
         }
     });

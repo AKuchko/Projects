@@ -69,13 +69,14 @@
 
 @media screen and (min-device-width: 1920px) {
     .introduction {
+        padding: 55px 261px;
         background: url(../source/img/main_backgound-1024.jpg) center;
         &__title {
             margin-bottom: 40px;
         }
         &__short-review {
             .simple-text:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
         }
         &__wrapper {
@@ -93,4 +94,7 @@
             margin-bottom: 40px;
         }
     } 
+    .block__text:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }

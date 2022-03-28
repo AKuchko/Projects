@@ -7,8 +7,7 @@
 }
 @media screen and (min-device-width: 1024px) {
     .stages {
-        // padding: 60px 40px;
-        .swiper-slide {
+        .swiper-slide:not(:nth-last-child(-n + 3)) {
             margin-bottom: 40px;
         }
     }    
@@ -18,4 +17,12 @@
             grid-template-columns: repeat(3, 1fr);
         }
     }
+}
+
+@media screen and (min-device-width: 1920px) {
+    .stages {
+        .swiper-slide:not(:nth-last-child(-n + 3)) {
+            margin-bottom: 60px;
+        }
+    }  
 }

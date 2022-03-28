@@ -17,6 +17,11 @@
 
         background-color: $white;
     }
+    &__logo {
+        width: 113.8px;
+        height: 32px;
+        background-image: url(../source/img/logo.svg);
+    }
 }
 
 .menu-burger {
@@ -53,7 +58,7 @@
     padding: 0 16px;
 
     transition: all 0.3s ease-in-out 0s;
-    background: $white;
+    background-color: #fff;
     text-align: left;
     &__wrapper {
         width: 288px;
@@ -118,5 +123,74 @@
 @media screen and (min-device-width: 1024px) {
     .header__wrapper {
         height: 80px;
+    }
+}
+
+@media screen and (min-device-width: 1920px) {
+    .header__wrapper {
+        height: 96px;
+        padding: 24px 30px;
+        border-bottom: none;
+        background-color: transparent;
+        position: absolute;
+    }
+    .header__logo {
+        width: 170.7px;
+        height: 48px;
+        background-image: url(../source/img/logo_1920.svg);
+    }
+    .menu-burger {
+        display: none;
+    }
+    .menu {
+        top: 0;
+        width: 933px;
+        height: 96px;
+        position:relative;
+        padding: 0;
+        background-color: transparent;
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            height: 96px;
+            width: 100%;
+        }
+        &__links {
+            display: flex;
+            margin: 0;
+        }
+        &__link {
+            a {
+                color: $border-color;
+            }
+        }
+        &__link:hover {
+            border-bottom: 4px solid #fff;
+            a {
+                color: #fff;
+            }
+        }
+        &__link:not(:last-child) {
+            margin: 0 40px 0 0;
+        }
+        &__buttons {
+            width: 287px;
+            margin-left: 60px;
+            display: flex;
+        }
+        &__btn {
+            width: 197px;
+            margin-bottom: 0;
+            border-color: #fff;
+            color: #fff;
+            &:last-child {
+                margin-left: 24px;
+            }
+            &-LV {
+                width: 66px;
+                border-color: $border-color;
+                color: $border-color;
+            }
+        }
     }
 }
