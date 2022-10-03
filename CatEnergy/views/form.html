@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b2254737-2757-42fd-891c-b1d5e098aafa&lang=ru_RU"></script>
+    <script type="module" src="../app/app.js"></script>
+    <script type="module" src="../app/form-page.js"></script>
+    <title>Cat Energy</title>
+</head>
+<body>
+    <svg style="display: none">
+        <symbol id="insta-icon" viewBox="0 0 16 16">
+            <path d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
+                L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z" fill="currentColor"/>
+            <path d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9
+                C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z" fill="currentColor"/>
+            <circle cx="12.3" cy="3.7" r="0.9" fill="currentColor"/>
+        </symbol>
+        <symbol id="checked" viewBox="0 0 21.1 15.5">
+            <polygon points="20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 " fill="currentColor"/>
+        </symbol>
+        <symbol id="phone-icon" viewBox="0 0 20 20">
+            <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" fill="currentColor"/>
+            <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                C7.8,20,8.1,19.7,8.1,19.4z" fill="currentColor"/>
+        </symbol>
+        <symbol id="mail-icon" viewBox="0 0 17 13">
+            <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" fill="currentColor"/>
+        </symbol>
+    </svg>
+    <header class="header header--not-main">
+        <div class="header__wrapper container">
+            <a href="../index.html" class="header__logo">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="../public/images/logo/cat-logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="../public/images/logo/cat-logo-tablet.svg">
+                    <img src="../public/images/logo/cat-logo-mobile.svg" alt="Cat energy logo">
+                </picture>
+            </a>
+            <img src="../public/images/logo/cat-logo-name-mobile.svg" alt="Cat energy" class="header__title">
+            <div class="header__burger">
+                <span class="header__cotleta"></span>
+                <span class="header__cotleta"></span>
+                <span class="header__cotleta"></span>
+            </div>
+            <nav class="header__navigation">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="../index.html" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="./catalog.html" class="header__link">Каталог продукции</a>
+                    </li>
+                    <li class="header__item  header__item--active">
+                        <a href="#" class="header__link">Подбор программы</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <form action="submit" class="form container">
+            <div class="form__header">
+                <h1 class="form__title title">Подбор программы</h1>
+                <p class="form__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            </div>
+            <section class="form__section form__section--multiple-fieldsets">
+                <fieldset class="form__fieldset form__fieldset--bio">
+                    <legend class="form__legend line-title--hidden">Данные кота</legend>
+                    <ul class="form__list">
+                        <li class="form__list-item">
+                            <div class="form__field field">
+                                <label for="name" class="field__label">Имя:
+                                    <abbr title="required" class="field__label-abbreviation">*</abbr>
+                                </label>
+                                <input type="text" id="name" name="cat name" class="field__input field__input--text" required/>
+                            </div>
+                        </li>
+                        <li class="form__list-item">
+                            <div class="form__field field">
+                                <label for="weight" class="field__label">Вес (кг):
+                                    <abbr title="required" class="field__label-abbreviation">*</abbr>
+                                </label>
+                                <input type="number" id="weight" name="cat name" min="0" max="50" class="field__input field__input--numbers" required/>
+                            </div>
+                        </li>
+                        <li class="form__list-item">
+                            <div class="form__field field">
+                                <label for="age" class="field__label">Возраст (лет):</label>
+                                <input type="number" id="age" name="cat name" min="0" max="50" class="field__input field__input--numbers"/>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__fieldset form__fieldset--type">
+                    <legend class="form__legend line-title--hidden">Данные кота</legend>
+                    <ul class="form__list">
+                        <li class="form__list-item">
+                            <label class="form__radio-field radio">Похудение
+                                <input type="radio" name="type" id="slim" class="radio__input" checked>
+                                <span class="radio__checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="form__list-item">
+                            <label class="form__radio-field radio">Набор массы
+                                <input type="radio" name="type" id="mass" class="radio__input">
+                                <span class="radio__checkmark"></span>
+                            </label>
+                        </li>
+                        <li class="form__list-item">
+                            <label class="form__radio-field radio">не знаю (нужен ваш совет)
+                                <input type="radio" name="type" id="help" class="radio__input">
+                                <span class="radio__checkmark"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <section class="form__section">
+                <fieldset class="form__fieldset form__fieldset--contacts">
+                    <legend class="form__legend line-title">Контактные данные (владельца кота)</legend>
+                    <ul class="form__list form__list--contacts">
+                        <li class="form__list-item">
+                            <div class="form__field field">
+                                <label for="mail" class="field__label">E-mail:
+                                    <abbr title="required" class="field__label-abbreviation">*</abbr>
+                                </label>
+                                <input type="email" id="mail" name="e-mail" class="field__input" required/>
+                                <span class="field__icon field__icon--mail">
+                                    <svg width="17" height="13">
+                                        <use xlink:href="#mail-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="form__list-item">
+                            <div class="form__field field">
+                                <label for="phone" class="field__label">Телефон:
+                                    <abbr title="required" class="field__label-abbreviation">*</abbr>
+                                </label>
+                                <input type="tel" id="phone" name="phone-number" class="field__input" required/>
+                                <span class="field__icon field__icon--phone">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#phone-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <section class="form__section">
+                <fieldset class="form__fieldset form__fieldset--addition">
+                    <legend class="form__legend line-title">Дополнительно</legend>
+                    <ul class="form__list form__list--addition">
+                        <li class="form__list-item">
+                            <label class="form__checkbox checkbox">сахарозаменитель
+                                <input type="checkbox" id="sweetener" value="sweetener" name="addition" class="checkbox__input"/>
+                                <span class="checkbox__custom-checkbox">
+                                    <svg>
+                                        <use xlink:href="#checked"/>
+                                    </svg>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="form__list-item">
+                            <label class="form__checkbox checkbox">Питьевая вода
+                                <input type="checkbox" id="water" value="water" name="addition" class="checkbox__input"/>
+                                <span class="checkbox__custom-checkbox">
+                                    <svg>
+                                        <use xlink:href="#checked"/>
+                                    </svg>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="form__list-item">
+                            <label class="form__checkbox checkbox">Молоко
+                                <input type="checkbox" id="milk" value="milk" name="addition" class="checkbox__input"/>
+                                <span class="checkbox__custom-checkbox">
+                                    <svg>
+                                        <use xlink:href="#checked"/>
+                                    </svg>
+                                </span>
+                            </label>
+                        </li>
+                        <li class="form__list-item">
+                            <label class="form__checkbox checkbox">Витамины
+                                <input type="checkbox" id="vitamin" value="vitamin" name="addition" class="checkbox__input"/>
+                                <span class="checkbox__custom-checkbox">
+                                    <svg>
+                                        <use xlink:href="#checked"/>
+                                    </svg>
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="form__submit">
+                    <button class="form__button button" type="submit">Отправить заявку</button>
+                    <p class="form__caption">* — Обязательные поля</p>
+                </div>
+            </section>
+        </form>
+        <section class="contacts contacts--form-page">
+            <div class="contacts__info container">
+                <h4 class="contacts__invitation">Приграшаем к сотрудничеству дилеров!</h4>
+                <div class="contacts__address">
+                    <p class="contacts__street">ул. Большая Конюшенная, д. 19/8 </p>
+                    <p class="contacts__city">Санкт-Петербург</p>
+                </div>
+            </div>
+            <div class="contacts__map" id="map"></div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="footer__logo">
+            <a href="#" class="footer__logo-link">
+                <img src="../public/images/logo/cat-logo-name-mobile.svg" alt="Cat Energy" class="footer__logo-image">
+            </a>
+        </div>
+        <div class="footer__social-list">
+            <div class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" class="footer__social-image">
+                        <use xlink:href="#insta-icon"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" class="footer__social-image">
+                        <use xlink:href="#insta-icon"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" class="footer__social-image">
+                        <use xlink:href="#insta-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer__authorship">
+            <p class="footer__author">ALEXANDR Kuchko</p>
+            <a href="#" class="footer__logo--ak">
+                <img src="../public/images/logo/ak-logo.svg" alt="AK">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

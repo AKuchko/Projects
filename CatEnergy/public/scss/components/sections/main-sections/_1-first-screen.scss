@@ -3,7 +3,7 @@
     padding-top: 30px;
     text-align: center;
     color: $white;
-    background: url('../images/index-background-mobile.jpg') top/100% auto no-repeat;
+    background: url('../images/main-page-bg/index-background-mobile.jpg') top/100% auto no-repeat;
 
     &__title {
         margin-top: 0;
@@ -62,7 +62,7 @@
 @media (min-width: 1440px) {
     .first-screen {
         height: 700px;
-        background: url('../images/index-background-desktop.jpg') right top no-repeat;
+        background: url('../images/main-page-bg/index-background-desktop.jpg') right top no-repeat;
         margin-bottom: 80px;
     }
 
