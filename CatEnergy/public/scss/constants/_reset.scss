@@ -1,0 +1,86 @@
+
+*, 
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul, 
+ol, 
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6{
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body{
+	color: #000;
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: $oswald;
+}
+
+.container {
+    width: auto;
+	max-width: 600px;
+	margin: auto;
+    padding: 0 $container-padding-mobile;
+}
+
+.main-content {
+	padding-top: 70px;
+}
+
+.title {
+	margin: 30px 0;
+	font-size: $font-3xl;
+
+	&--light {
+		color: $white;
+	}
+
+	&--dark {
+		color: $text-main;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 1000px;
+		padding: 0 $container-padding-tablet;
+	}
+
+	.main-content {
+		padding-top: 0;
+	}
+
+	.title {
+		margin: 50px 0;
+		font-size: $font-4xl;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		padding: 0 $container-padding-desktop;
+		max-width: 1440px;
+	}
+}

@@ -1,0 +1,23 @@
+.categories {
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .categories__item:not(:last-child)  {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .categories__item:not(:last-child)  {
+        margin-bottom: 0;
+    }
+
+    .categories__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

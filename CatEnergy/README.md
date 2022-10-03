@@ -1,0 +1,33 @@
+# CatEnergy 
+
+--- 
+
+Структура проекта
+
+```
+.
+├── app
+│   └── modules
+├── public
+│   ├── css
+│   ├── images
+│   │   ├── advantages
+│   │   ├── catalog-products
+│   │   ├── cats
+│   │   ├── gift-bg
+│   │   ├── icons
+│   │   ├── logo
+│   │   ├── main-page-bg
+│   │   └── map
+│   └── scss
+│       ├── components
+│       │   ├── common
+│       │   └── sections
+│       │       ├── catalog-sections
+│       │       ├── form-sections
+│       │       ├── main-sections
+│       │       └── page
+│       └── constants
+└── views
+
+23 directories

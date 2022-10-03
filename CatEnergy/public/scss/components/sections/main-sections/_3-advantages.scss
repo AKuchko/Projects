@@ -1,0 +1,105 @@
+.advantages {
+    margin-bottom: 40px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: calc(60px + 20 * ((100vw - 320px) / (448)));
+        max-width: 80px;
+        height: calc(60px + 20 * ((100vw - 320px) / (448)));
+        max-height: 80px;
+        background: $green-accent;
+    }
+
+    &__text {
+        font-family: 'Arial';
+        margin-left: 20px;
+        line-height: 18px;
+        color: $gray-text;
+    }
+
+    &__number {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .advantages {
+        border-bottom: 1px solid $gray-bg;
+        margin-bottom: 0;
+        padding-bottom: 105px;
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &__item {
+            display: block;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2n) {
+                margin-left: 30px;
+            }
+
+            &:nth-child(-n + 2) {
+                margin-bottom: 140px;
+            }
+        }
+
+        &__text {
+            margin-left: 0;
+            max-width: 245px;
+            line-height: 24px;
+            font-size: $font-s;
+        }
+
+        &__image {
+            margin-bottom: 37px;
+        }
+
+        &__number {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 125px;
+            font-size: 281px;
+            opacity: 0.05;
+            line-height: 201px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .advantages {
+        border-bottom: none;
+
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &__item {
+            &:nth-child(2n) {
+                margin-left: 0px;
+            }
+
+            &:nth-child(-n + 2) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

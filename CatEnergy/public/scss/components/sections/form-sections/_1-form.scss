@@ -1,0 +1,161 @@
+.form {
+    overflow: hidden;
+
+    &__subtitle {
+        max-width: 230px;
+        margin-bottom: 40px;
+        font-size: $font-xs;
+        text-transform: uppercase;
+        line-height: 18px;
+        color: $text-main;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    &__section {
+        padding-bottom: 30px;
+    }
+
+    &__button {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    &__caption {
+        color: $gray-text;
+        font-family: 'Arial';
+        text-align: center;
+    }
+}
+
+.form {
+    &__fieldset {
+        &--bio {
+            margin-bottom: 23px;
+        }
+
+        &--type {
+            padding: 20px 0;
+            border-top: 1px solid $input-border;
+            border-bottom: 1px solid $input-border;
+        }
+
+        &--addition {
+            margin-bottom: 34px;
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .form {
+        padding: 0 70px;
+
+        &__title {
+            margin-left: -30px;
+        }
+
+        &__subtitle {
+            max-width: 55%;
+            font-size: $font-l;
+            line-height: 30px;
+            margin-bottom: 70px;
+        }
+
+        &__section {
+            padding-bottom: 70px;
+        }
+        
+        &__list-item:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &__fieldset {
+            &--bio {
+                margin-bottom: 72px;
+            }
+
+            &--type {
+                border: 1px solid $input-border;
+            }
+
+            &__addition {
+                margin-bottom: 54px;
+            }
+        }
+
+        &__list--addition {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1ft 1fr;
+            grid-row-gap: 32px;
+            grid-column-gap: 60px;
+        }
+
+        &__list--addition .form__list-item:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &__submit {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 60px;
+            align-items: center;
+        }
+
+        &__button {
+            margin-bottom: 0;
+        }
+
+        &__caption {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .form {
+        padding: 0 110px;
+
+        &__title {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+
+        &__list--contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 80px;
+        }
+
+        &__list--addition {
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 80px;
+        }
+        
+        &__section--multiple-fieldsets {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 80px;
+        }
+
+        &__fieldset {
+            &--bio {
+                margin-bottom: 0;
+            }
+
+            &--type {
+                margin-bottom: 0;
+            }
+
+            &--addition {
+                margin-bottom: 60px;
+            }
+        }
+
+        &__submit {
+            grid-column-gap: 80px;
+        }
+    }
+}

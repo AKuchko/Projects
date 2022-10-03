@@ -1,0 +1,194 @@
+.program-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 266px;
+    width: 100%;
+    padding: 25px 20px 22px;
+    color: $text-main;
+    background: $gray-bg;
+
+    &__content {
+        position: relative;
+        padding: 13px 0 22px;
+        border-bottom: 1px solid $gray-border;
+
+        &::after, &::before {
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: $green-accent;
+        }
+
+        &--slim::after {
+            top: -4px;
+            left: 8px;
+            width: 35px;
+            height: 49px;
+            transform: scaleX(-1);
+            background: url('../../public/images/icons/cat-icon-slim.svg') no-repeat;
+        }
+
+        &--fat::after {
+            top: 11px;
+            left: -9px;
+            width: 67px;
+            height: 28px;
+            background: url('../../public/images/icons/cat-icon-fat.svg') no-repeat;
+        }
+    }
+
+    &__title {
+        font-size: $font-xl;
+        text-transform: uppercase;
+        margin: 0 0 35px 70px;
+    }
+
+    &__text {
+        font-family: 'Arial';
+        line-height: 18px;
+        color: $gray-text;
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        max-width: 120px;
+        margin-top: auto;
+        font-family: $oswald;
+        font-size: $font-s;
+        color: $text-main;
+        text-transform: uppercase;
+        background: transparent;
+   
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+            width: 24.2px;
+            height: 11px;
+            background: url('../../public/images/icons/arrow-icon.svg') center / contain  no-repeat ;
+            transition: all 0.1s ease 0s;
+        }
+
+        &:hover::after {
+            right: -9.5px;
+            width: 33px;
+            background: url('../../public/images/icons/arrow-icon-hover.svg') center / contain  no-repeat ;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+}
+
+@media (min-width: $tablet) {
+    .program-card {
+        min-height: 372px;
+        padding: 80px 53px 62px;
+
+        &__content {
+            border: none;
+            padding: 0;
+
+            &::before {
+                width: 200px;
+                height: 200px;
+                top: 12px;
+                left: 100%;
+                transform: translateX(-100%);
+            }
+
+            &--slim::after {
+                top: 0;
+                left: calc(100% - 30px);
+                width: 140px;
+                height: 194px;
+                transform: translateX(-100%) scaleX(-1);
+            }
+    
+            &--fat::after {
+                top: 56px;
+                left: calc(100% + 32px);
+                width: 268px;
+                height: 112px;
+                transform: translateX(-100%);
+            }
+        }
+
+        &__title {
+            margin: 0 0 25px;
+            font-size: $font-3xl;
+        }
+
+        &__text {
+            max-width: 372px;
+            line-height: 24px;
+            font-size: $font-s;
+        }
+
+        &__link {
+            max-width: 150px;
+            font-size: $font-l;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .program-card {
+        max-width: 570px;
+        padding: 75px 53px 60px;
+
+        &__content {
+            border: none;
+            padding: 0;
+
+            &::before {
+                width: 100px;
+                height: 100px;
+                top: -28px;
+                left: 0;
+                transform: none;
+            }
+
+            &--slim::after {
+                top: -34px;
+                left: 14px;
+                width: 70px;
+                height: 98px;
+                transform: scaleX(-1);
+            }
+    
+            &--fat::after {
+                top: -6px;
+                left: -18px;
+                width: 134px;
+                height: 56px;
+                transform: none;
+            }
+        }
+
+        &__title {
+            margin: 0 0 75px 162px;
+        }
+
+        &__text {
+            max-width: none;
+        }
+
+        &__btn-arrow {
+            margin-left: 25px;
+        }
+    }
+}

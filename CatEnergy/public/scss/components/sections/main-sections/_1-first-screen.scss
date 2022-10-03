@@ -1,0 +1,82 @@
+.first-screen {
+    margin-bottom: 22px;
+    padding-top: 30px;
+    text-align: center;
+    color: $white;
+    background: url('../images/index-background-mobile.jpg') top/100% auto no-repeat;
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.first-screen__can {
+    width: 100%;
+}
+
+.first-screen__button {
+    display: block;
+    width: 100%;
+    padding: 11px 10px;
+    line-height: 18px;
+}
+
+@media (min-width: 768px) {
+    .first-screen {
+        position: relative;
+        color: $text-main;
+        margin-bottom: 420px;
+        text-align: left;
+        background: none;
+    }
+
+    .first-screen__content {
+        max-width: 427px;
+        margin-left: 90px;
+    }
+
+    .first-screen__can {
+        position: absolute;
+        top: calc(100% - 100vw * 0.1);
+        right: 11%;
+        width: 568px;
+        z-index: -1;
+    }
+
+    .first-screen__subtitle {
+        font-size: $font-l;
+        margin-bottom: 50px;
+    }
+
+    .first-screen__button {
+        padding: 16px 27px;
+        max-width: 245px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .first-screen {
+        height: 700px;
+        background: url('../images/index-background-desktop.jpg') right top no-repeat;
+        margin-bottom: 80px;
+    }
+
+    .first-screen__content {
+        max-width: 450px;
+        margin: 175px 0 0 80px;
+    }
+
+    .first-screen__can {
+        position: absolute;
+        bottom: auto;
+        top: 143px;
+        right: 24.3%;
+        width: auto;
+        z-index: 0;
+    }
+}

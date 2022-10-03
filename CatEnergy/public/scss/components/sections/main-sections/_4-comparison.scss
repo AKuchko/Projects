@@ -1,0 +1,242 @@
+.comparison {
+    padding: 30px 0 40px 0;
+    background: $gray-bg;
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-family: 'Arial';
+        line-height: 18px;
+        color: $gray-text;
+    }
+
+    &__achievements {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    &__achievement {
+        position: relative;
+        width: 124px;
+        padding: 15px 0;
+
+        border: 1px solid $gray-border;
+        border-radius: 5px;
+        
+        text-align: center;
+
+        &:nth-child(even) {
+            margin-left: 30px;
+        }
+    }
+
+    &__achievement-title {
+        font-size: $font-xl;
+        text-transform: uppercase;
+    }
+
+    &__achievement-text {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+
+        padding: 0 15px;
+
+        font-size: $font-2xs;
+        text-transform: lowercase;
+
+        color: $gray-text;
+        background: $gray-bg;
+    }
+
+    &__spending {
+        margin-bottom: 45px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__cats {
+        margin-bottom: 30px;
+    }
+
+    &__cat-wrap {
+        max-width: 320px;
+        margin: auto;
+
+        &--after {
+            position: relative;
+        }
+
+        &--before {
+            position: absolute;
+            overflow: hidden;
+            width: 50%;
+            background: $gray-bg;
+        }
+    }
+
+    &__range {
+        display: flex;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    &__range-text {
+        font-size: $font-s;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 20px;
+        transition: border 0.3s ease 0s;
+    }
+
+    &__input {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .comparison {
+        padding: 50px 0 0;
+        background: none;
+
+        &__text  {
+            margin-bottom: 55px;
+            font-size: $font-s;
+            line-height: 24px;
+        }
+
+        &__results {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 85px;
+        }
+
+        &__spending {
+            margin-left: 170px;
+            margin-bottom: 0;
+            font-size: $font-l;
+            text-align: right;
+            line-height: 20px;
+        }
+
+        &__achievements {
+            margin-bottom: 0;
+        }
+
+        &__achievement {
+            width: 161px;
+            padding: 20px 0;
+
+            &:nth-child(even) {
+                margin-left: 42px;
+            }
+        }
+
+        &__achievement-title {
+            font-size: $font-2xl;
+        }
+
+        &__achievement-text {
+            padding: 0 10px;
+            font-size: $font-xs;
+            white-space: nowrap;
+            background: $white;
+        }
+
+        &__before-after {
+            padding-bottom: 70px;
+            background: linear-gradient(to bottom, transparent 26.78%, $gray-bg 0);
+        }
+
+        &__cat-wrap {
+            max-width: 690px;
+
+            &--before {
+                background: linear-gradient(to bottom, $white 32.75%, $gray-bg 0);
+            }
+        }
+
+        &__range {
+            padding: 0 95px;
+            margin: auto;
+        }
+
+        &__range-text {
+            border-bottom: 1px dashed #bebebe;
+        }
+
+        &__range:hover .comparison__range-text  {
+            border-style: solid;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .comparison {
+        position: relative;
+        padding-bottom: 75px;
+        background: linear-gradient(to bottom, $white 28%, $gray-bg 0);
+
+        &__title {
+            margin-bottom: 150px;
+        }
+
+        &__text {
+            max-width: 450px;
+            margin-bottom: 75px;
+        }
+
+        &__results {
+            display: block;
+            margin-bottom: 0;
+        }
+
+        &__achievements {
+            justify-content: flex-start;
+            margin-bottom: 60px;
+        }
+
+        &__achievement-text {
+            background: $gray-bg;
+        }
+
+        &__spending {
+            margin-left: 0;
+            text-align: left;
+        }
+
+        &__before-after {
+            position: absolute;
+            bottom: 0;
+            right: calc((100vw - 1440px) / 2 + 110px);
+            background: none;
+        }
+
+        &__cat-wrap {
+            max-width: 677px;
+
+            img {
+                width: 677px;
+            }
+
+            &--before {
+                background: linear-gradient(to bottom, $white 30.5%, $gray-bg 0);
+            }
+        }
+
+        &__range {
+            margin: 0;
+        }
+    }
+}

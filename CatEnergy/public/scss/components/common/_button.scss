@@ -1,0 +1,38 @@
+.button {
+    min-width: 245px;
+    height: 40px;
+    font-family: $oswald;
+    font-size: $font-xs;
+    text-transform: uppercase;
+    color: $white;
+    background: $green-accent;
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+        background: $green-accent-hover;
+    }
+
+    &:active {
+        color: rgba($color: $white, $alpha: .3);
+    }
+}
+
+.button--gray {
+    background: $gray-bg;
+    color: $text-main;
+
+    &:hover {
+        background: $gray-button-hover;
+    }
+
+    &:active {
+        color: rgba($color: $text-main, $alpha: .3);
+    }
+}
+
+@media (min-width: 768px) {
+    .button {
+        height: 52px;
+        font-size: $font-l;
+    }
+}

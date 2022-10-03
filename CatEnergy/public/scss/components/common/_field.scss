@@ -1,0 +1,82 @@
+.field {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: $font-s;
+    text-transform: uppercase;
+
+    &__label {
+        color: $text-header;
+        white-space: nowrap;
+    }
+
+    &__label-abbreviation {
+        text-decoration: none;
+    }
+
+    &__input {
+        -webkit-appearance: none;
+        position: relative;
+        width: 100%;
+        margin-left: 15px;
+        padding: 12.5px 15px;
+        border: 1px solid $input-border;
+        border-radius: 0;
+        font-family: inherit;
+        font-size: $font-s;
+        text-transform: inherit;
+        line-height: 18px;
+        color: $gray-text;
+
+        &:hover {
+            border-color: $input-border-hover;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $gray-text;
+        }
+
+        &--incorrect {
+            border-color: $error !important;
+
+            & ~ .field__icon {
+                color: $error;
+            }
+        }
+
+        &--correct {
+            border-color: $green-accent;
+
+            & ~ .field__icon {
+                color: $green-accent;
+            }
+        }
+    }
+  
+    &__icon {
+        display: flex;
+        position: absolute;
+        color: $text-header;
+
+        &--mail {
+            right: 15px;
+        }
+
+        &--phone {
+            right: 12px;
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    .field {
+        font-size: $font-l;
+
+        &__input {
+            padding: 13px 19px;
+            font-size: $font-l;
+            line-height: 24px;
+        }
+    }
+}
