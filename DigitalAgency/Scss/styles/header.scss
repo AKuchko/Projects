@@ -96,6 +96,7 @@
 .menu-is-active {
     overflow: hidden;
     & .menu {
+        left: 0;
         top: 60px;
         opacity: 1;
     }

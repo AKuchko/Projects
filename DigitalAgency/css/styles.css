@@ -208,6 +208,7 @@ body {
   overflow: hidden;
 }
 .menu-is-active .menu {
+  left: 0;
   top: 60px;
   opacity: 1;
 }
