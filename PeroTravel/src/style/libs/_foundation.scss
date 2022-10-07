@@ -1,0 +1,23 @@
+.container {
+    padding: 0 24px;
+
+    @media (min-width: $tablet) {
+        padding: 0 79px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 0 160px;
+    }
+
+    &--section {
+        padding: 150px 24px 0;
+
+        @media (min-width: $tablet) {
+            padding: 150px 79px 0;
+        }
+    }
+}
+
+.title {
+
+}
