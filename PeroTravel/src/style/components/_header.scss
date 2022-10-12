@@ -1,11 +1,10 @@
-body {
-    background: $black;
-    overflow-x: hidden;
-}
-
 .header {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
+    z-index: 10;
+    transition: all 0.5s ease-in-out 0s;
 
     &__wrapper {
         position: relative;
@@ -13,12 +12,17 @@ body {
         align-items: center;
         justify-content: space-between;
         padding-top: 27px;
+        transition: all 0.5s;
+    }
+
+    &__logo {
+        transition: all 0.3s;
     }
 
     &__navigation {
         font-family: 'Montserrat';
-        font-weight: $weight-regular;
         font-size: calc(14px + (1 / 74.667) * (100vw - 320px));
+        font-weight: $weight-regular;
         line-height: 17px;
         text-align: right;
         color: $white;
@@ -28,11 +32,10 @@ body {
         position: absolute;
         top: 0;
         right: 0;
-        height: calc(100vh - 113.4px);
         width: 100vw;
+        height: 0;
         padding-top: 113.4px;
-        overflow: hidden;
-        transition: background 0.3s ease, right 0.3s ease;
+        transition: all 0.3s ease;
     }
 
     &__list-item {
@@ -56,9 +59,8 @@ body {
     &__button {
         position: relative;
         width: calc(32px + (1 / 13.5) * (100vw - 320px));
-        height: calc(32px + (1 / 13.5) * (100vw - 320px));
         max-width: 40px;
-        max-height: 40px;
+        height: 40px;
     }
 
     &__button span {
@@ -80,54 +82,84 @@ body {
             transform: none;
         }
     }
-
 }
 
-.header.active {
-    .header__button {
-        span {
-            transform: scale(0,  0) rotate(180deg);
+body.menu-active {
+    overflow-y: hidden;
 
-            &:first-child {
-                top: 50%;
-                transform: rotate(45deg);
-            }
+    .header__button span {
+        transform: scale(0,  0) rotate(180deg);
 
-            &:last-child {
-                top: 50%;
-                transform: rotate(-45deg);
-            }
+        &:first-child {
+            top: 50%;
+            transform: rotate(45deg);
+        }
+
+        &:last-child {
+            top: 50%;
+            transform: rotate(-45deg);
         }
     }
 
     .header__list {
         right: 0;
+        height: calc(100vh - 113.4px);
         background: rgba($color: $black, $alpha: 0.8);
     }
 
     .header__list-item {
         right: 24px;
     }
+
+    .header--background .header__list {
+        top: -10px;
+        right: -24px;
+    }
+}
+
+.header--background {
+    width: calc(100vw - 48px);
+    margin: 10px 24px 0;
+    border-radius: 10px;
+    background: $blue;
+
+    .header__wrapper {
+        padding-top: 0;
+    }
+
+    .header__logo {
+        transform: scale(0.7);
+    }
+}
+
+.header.hide {
+    top: -100%;
 }
 
 @media (min-width: $tablet) {
-    .header {
-        &__navigation {
-            font-size: 20px;
-        }
 
-        &__list-item {
-            margin-bottom: 50px;
-        }
+    .header__navigation {
+        font-size: 20px;
+    }
+
+    .header__list-item {
+        margin-bottom: 50px;
     }
 
     .header.active .header__list-item{
         right: 79px;
     }
+
+    .header--background {
+        width: calc(100vw - 158px);
+        margin: 10px 79px 0;
+    }
 }
 
 @media (min-width: $desktop) {
     .header {
+        position: absolute;
+
         &__navigation {
             font-size: 14px;
         }
@@ -150,6 +182,21 @@ body {
 
         &__button {
             display: none;
+        }
+    }
+
+    .header--background {
+        width: 100vw;
+        margin: 0;
+        border-radius: none;
+        background: transparent;
+    
+        .header__wrapper {
+            padding-top: 27px;
+        }
+    
+        .header__logo {
+            transform: none;
         }
     }
 }

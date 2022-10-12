@@ -1,3 +1,11 @@
+body {
+    font-family: 'Montserrat';
+}
+
+main {
+    overflow: hidden;
+}
+
 .container {
     padding: 0 24px;
 
@@ -18,6 +26,20 @@
     }
 }
 
-.title {
+.page-title {
+    font-family: 'Montserrat';
+    font-weight: $weight-bold;
+    font-size: calc(32px + (1 / 27) * (100vw - 320px));
+    text-transform: uppercase;
+    line-height: 44px;
 
+    @media (min-width: $tablet) {
+        font-size: calc(48px + (1 / 28) * (100vw - 768px));
+        line-height: 59px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 72px;
+        line-height: 88px;
+    }
 }
