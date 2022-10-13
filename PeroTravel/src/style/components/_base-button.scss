@@ -1,0 +1,27 @@
+.base-button {
+    padding: 16px 52px;
+    border-radius: 60px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: $weight-bold;
+    color: $white;
+    background: $blue-gradient;
+}
+
+.base-button--with-arrow {
+    position: relative;
+    padding: 16px 72px 17px 52px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 53px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 7.5px;
+        background: url('images/Arrow 1.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

@@ -1,0 +1,112 @@
+.header-section {
+    position: relative;
+    margin-bottom: 91px;
+    padding-top: 201px;
+    padding-bottom: 201px;
+    color: $white;
+    background: url('images/main-background-m.png') center / cover no-repeat;
+
+    &__company-name {
+        margin-bottom: 90px;
+        font-style: normal;
+        font-size: 2em;
+        font-weight: $weight-black;
+        line-height: 90%;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 2px $white;
+    }
+
+    &__page-title {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 12px;
+    }
+
+    &__page-subtitle {
+        position: absolute;
+        top: 20px;
+        right: -9.12%;
+        font-family: 'mr Kindly JasmineG';
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48px;
+        text-transform: lowercase;
+        color: $yellow;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-bottom: 90px;
+    }
+
+    &__social-list {
+        width: 32px;
+        margin-left: auto;
+    }
+
+    &__social-item {
+        height: 32px;
+
+        &:last-child {
+            height: 30px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+    
+    &__social-link {
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+    }
+
+    &__slider {
+        left: 0;
+        bottom: 0;
+        transform: translateY(48.5%);
+        width: 100%;
+        position: absolute !important;
+        overflow: visible !important;
+    }
+
+}
+
+@media (min-width: $tablet) {
+    .header-section {
+        background: url('images/main-background-t.png') center / cover no-repeat;
+
+        &__page-subtitle {
+            top: 35px;
+            right: -17.23%;
+        }
+
+        &__company-name {
+            font-size: 96px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .header-section {
+        background: url('images/main-background-d.png') center / cover no-repeat;
+
+        &__page-title {
+            margin: 0;
+        }
+
+        &__page-subtitle {
+            top: 48px;
+            right: -17%;
+            font-size: 64px;
+            line-height: 64px;
+        }
+
+        &__company-name {
+            margin-top: -11px;
+            line-height: 117px;
+        }
+    }
+}

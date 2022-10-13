@@ -1,11 +1,25 @@
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family==Marko+One&display=swap');
 @font-face {
     font-family: 'Marko One', serif;
     src: url('https://fonts.googleapis.com/css2?family==Marko+One&display=swap');
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Black.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+
 @font-face {
     font-family: 'mr Kindly JasmineG';
     src: url('fonts/mr_KindlyJasmineG.otf');
