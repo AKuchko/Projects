@@ -7,39 +7,47 @@ main {
 }
 
 .container {
-    padding: 0 24px;
+    padding: 0 $padding-mobile;
+
+    @media (min-width: 428px) {
+        padding: 0 $padding-design-mobile;
+    }
 
     @media (min-width: $tablet) {
-        padding: 0 79px;
+        padding: 0 $padding-tablet;
     }
 
     @media (min-width: $desktop) {
         padding: 0 160px;
     }
+}
 
-    &--section {
-        padding: 150px 24px 0;
-
-        @media (min-width: $tablet) {
-            padding: 150px 79px 0;
-        }
-    }
+.container--section {
+    margin-top: 150px;
 }
 
 .page-title {
     font-family: 'Montserrat';
     font-weight: $weight-bold;
-    font-size: calc(32px + (1 / 27) * (100vw - 320px));
+    font-size: $page-title-mobile;
     text-transform: uppercase;
     line-height: 44px;
 
     @media (min-width: $tablet) {
-        font-size: calc(48px + (1 / 28) * (100vw - 768px));
+        font-size: $page-title-tablet;
         line-height: 59px;
     }
 
     @media (min-width: $desktop) {
-        font-size: 72px;
+        font-size: $page-title-desktop;
         line-height: 88px;
     }
+}
+
+.title {
+    margin-bottom: 90px;
+    font-size: 24px;
+    font-weight: $weight-bold;
+    line-height: 29px;
+    color: $blue;
 }

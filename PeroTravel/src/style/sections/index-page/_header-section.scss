@@ -1,6 +1,5 @@
 .header-section {
     position: relative;
-    margin-bottom: 91px;
     padding-top: 201px;
     padding-bottom: 201px;
     color: $white;
@@ -69,13 +68,13 @@
         transform: translateY(48.5%);
         width: 100%;
         position: absolute !important;
-        overflow: visible !important;
     }
 
 }
 
 @media (min-width: $tablet) {
     .header-section {
+        margin-bottom: 91px;
         background: url('images/main-background-t.png') center / cover no-repeat;
 
         &__page-subtitle {
@@ -91,6 +90,7 @@
 
 @media (min-width: $desktop) {
     .header-section {
+        margin-bottom: 113px;
         background: url('images/main-background-d.png') center / cover no-repeat;
 
         &__page-title {

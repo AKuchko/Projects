@@ -2,15 +2,30 @@
 $white: #ffffff;
 $black: #282828;
 $blue: #0499DD;
+$gray: #D4D4D4;
 $gray2: #EDEDED;
 $blue-gradient: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
 $yellow: #FFC700;
-
+// font size
+$page-title-mobile: calc(32px + (1 / 27) * (100vw - 320px));
+$page-title-tablet:  calc(48px + (1 / 28) * (100vw - 768px));
+$page-title-desktop: 72px;
 // font weight
 $weight-regular: 500;
 $weight-bold: 700;
 $weight-black: 900;
-
 // display
 $tablet: 768px;
 $desktop: 1440px;
+// Padding
+$padding-mobile: calc(20px + (1 / 27) * (100vw - 320px));
+$padding-mobile-negtive: calc((24px + (1 / 8.1455) * (100vw - 320px)) * -1);
+
+$padding-design-mobile: calc(24px + (1 / 6.1818) * (100vw - 428px));
+$padding-design-mobile-negative: calc((24px + (1 / 6.1818) * (100vw - 428px)) * -1);
+
+$padding-tablet: calc(79px + (1 / 8.2963) * (100vw - 768px));
+$padding-tablet-negtive: calc((79px + (1 / 8.2963) * (100vw - 768px)) * -1);
+
+$padding-desktop: 160px;
+$padding-desktop-negative: -160px;

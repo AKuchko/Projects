@@ -1,0 +1,44 @@
+.base-slider {
+    &__wrapper {
+        margin-bottom: 55px;
+    }
+
+    &__button-prev,
+    &__button-next {
+        position: relative !important;
+        display: inline-block !important;
+        right: 0 !important;
+        left: 0 !important;
+        top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    &__button-next {
+        margin: 0 0 0 38px;
+    }
+
+    &__scrollbar {
+        left: auto !important;
+        right: $padding-mobile-negtive !important;
+        bottom: 21px !important;
+        width: calc(100vw - (#{$padding-mobile} + 137px)) !important;
+        height: 2px !important;
+        border-radius: 10px 0 0 10px !important;
+        background: $gray !important;
+
+        .swiper-scrollbar-drag {
+            background: $blue;
+        }
+
+        @media (min-width: $tablet) {
+            right: $padding-tablet-negtive !important;
+            width: calc(100vw - (#{$padding-tablet} + 137px)) !important;
+        }
+
+        @media (min-width: $desktop) {
+            right: -160px !important;
+            width: calc(100vw - 297px) !important;
+            max-width: 1440px;
+        }
+    }
+}
