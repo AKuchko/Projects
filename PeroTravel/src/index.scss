@@ -9,7 +9,10 @@
 // components
 @import 'style/components/header';
 @import 'style/components/base-button';
-@import 'style/components/slide.scss';
+@import 'style/components/slider';
+@import 'style/components/slide';
 
 // sections
 @import 'style/sections/index-page/header-section';
+@import 'style/sections/index-page/popular-excursions';
+@import 'style/sections/index-page/about-section';

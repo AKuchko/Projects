@@ -1,0 +1,70 @@
+.about {
+    position: relative;
+    padding-top: calc(105px + (1 / 14) * (100vw - 320px));
+    padding-bottom: 159px;
+
+    @media (min-width: $tablet) {
+        padding-top: 137px;
+        padding-bottom: 179px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 137px;
+        padding-bottom: 136px;
+    }
+
+    &__content {
+        width: 100%;
+        margin-left: auto;
+        border-radius: 10px;
+        padding: 42px;
+        font-size: 13px;
+        font-weight: $weight-regular;
+        line-height: 16px;
+        color: $black;
+        background-color: $gray2;
+
+        @media (min-width: 428px) {
+            width: calc(380px + (1 / 3.0088) * (100vw - 428px));
+        }
+
+        @media (min-width: $tablet) {
+            padding: 62px 55px 61px;
+            width: calc(493px + (1 / 13.7143) * (100vw - 768px));
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        @media (min-width: $desktop) {
+            padding: 61px 85px 105px 75px;
+            width: 542px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        @media (min-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__text-block:not(:last-child) {
+        margin-bottom: 10px;
+
+        @media (min-width: $tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+        border-radius: 0 10px 10px 0;
+        background: url('images/about-background.png') center / cover no-repeat;
+        z-index: -1;
+    }
+}

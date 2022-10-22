@@ -8,6 +8,12 @@
     background: $blue-gradient;
 }
 
+.base-button--small {
+    padding: 12px 43px 13px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
 .base-button--with-arrow {
     position: relative;
     padding: 16px 72px 17px 52px;
@@ -20,7 +26,7 @@
         transform: translateY(-50%);
         width: 14px;
         height: 7.5px;
-        background: url('images/Arrow 1.svg');
+        background: url('images/icon-arrow.svg');
         background-repeat: no-repeat;
         background-position: center;
     }
