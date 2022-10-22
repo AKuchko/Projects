@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     z-index: 10;
-    transition: all 0.5s ease-in-out 0s;
+    transition: top 0.5s ease-in-out 0s;
 
     &__wrapper {
         position: relative;
@@ -35,7 +35,7 @@
         width: 100vw;
         height: 0;
         padding-top: 113.4px;
-        transition: all 0.3s ease;
+        transition: height 0.3s ease, background 0.3s;
     }
 
     &__list-item {
@@ -103,7 +103,7 @@ body.menu-active {
 
     .header__list {
         right: 0;
-        height: calc(100vh - 113.4px);
+        height: 100vh;
         background: rgba($color: $black, $alpha: 0.8);
     }
 

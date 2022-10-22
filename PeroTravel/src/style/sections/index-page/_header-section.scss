@@ -6,6 +6,7 @@
     background: url('images/main-background-m.png') center / cover no-repeat;
 
     &__company-name {
+        display: inline-block;
         margin-bottom: 90px;
         font-style: normal;
         font-size: 2em;
