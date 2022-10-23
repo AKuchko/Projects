@@ -25,29 +25,3 @@ main {
 .container--section {
     margin-top: 150px;
 }
-
-.page-title {
-    font-family: 'Montserrat';
-    font-weight: $weight-bold;
-    font-size: $page-title-mobile;
-    text-transform: uppercase;
-    line-height: 44px;
-
-    @media (min-width: $tablet) {
-        font-size: $page-title-tablet;
-        line-height: 59px;
-    }
-
-    @media (min-width: $desktop) {
-        font-size: $page-title-desktop;
-        line-height: 88px;
-    }
-}
-
-.title {
-    margin-bottom: 90px;
-    font-size: 24px;
-    font-weight: $weight-bold;
-    line-height: 29px;
-    color: $blue;
-}

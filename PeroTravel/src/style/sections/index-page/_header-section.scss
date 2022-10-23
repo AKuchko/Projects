@@ -6,7 +6,7 @@
     background: url('images/main-background-m.png') center / cover no-repeat;
 
     &__company-name {
-        display: inline-block;
+        display: block;
         margin-bottom: 90px;
         font-style: normal;
         font-size: 2em;
@@ -76,6 +76,7 @@
 @media (min-width: $tablet) {
     .header-section {
         margin-bottom: 91px;
+        padding-top: 320px;
         background: url('images/main-background-t.png') center / cover no-repeat;
 
         &__page-subtitle {
@@ -92,6 +93,7 @@
 @media (min-width: $desktop) {
     .header-section {
         margin-bottom: 113px;
+        padding-top: 237px;
         background: url('images/main-background-d.png') center / cover no-repeat;
 
         &__page-title {
