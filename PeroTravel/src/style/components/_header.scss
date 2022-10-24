@@ -136,6 +136,13 @@ body.menu-active {
     top: -100%;
 }
 
+@media (min-width: 428px) {
+    .header--background {
+        width: calc(100vw - #{$padding-design-mobile} * 2);
+        margin: 10px $padding-design-mobile 0;
+    }
+}
+
 @media (min-width: $tablet) {
 
     .header__navigation {
