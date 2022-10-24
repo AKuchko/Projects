@@ -1,0 +1,44 @@
+.excursions-types {
+    &__list {
+        margin-bottom: 60px;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__info {
+        max-width: 550px;
+        margin: 0 auto 40px;
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            margin: 0 auto 20px;
+        }
+    }
+
+    &__button {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (min-width: $desktop) {
+    .excursions-types__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .excursions-types__list-item {
+        max-width: 550px;
+        
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 40px;
+        }
+    }
+}

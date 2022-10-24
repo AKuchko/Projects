@@ -25,3 +25,15 @@ main {
 .container--section {
     margin-top: 150px;
 }
+
+.standart-text {
+    font-size: 13px;
+    font-weight: $weight-regular;
+    line-height: 16px;
+    color: $black;
+
+    @media (min-width: $tablet) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

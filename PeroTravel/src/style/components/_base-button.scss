@@ -15,13 +15,14 @@
 }
 
 .base-button--with-arrow {
+    width: 230px;
+    height: 50px;
     position: relative;
-    padding: 16px 72px 17px 52px;
 
     &::after {
         content: '';
         position: absolute;
-        right: 53px;
+        right: 52px;
         top: 50%;
         transform: translateY(-50%);
         width: 14px;
