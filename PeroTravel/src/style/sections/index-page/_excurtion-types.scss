@@ -1,0 +1,19 @@
+.excursions-types {
+    &__list {
+        margin-bottom: 60px;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__info {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        display: block;
+        margin: auto;
+    }
+}
