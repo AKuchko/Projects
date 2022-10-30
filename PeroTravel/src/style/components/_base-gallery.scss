@@ -1,0 +1,103 @@
+.base-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        background: $black;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale3d(1.2, 1.2, 1);
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: .2);
+        }
+    }
+
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__item:nth-child(5) {
+        height: 400px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    &__item:nth-child(6) {
+        height: 186px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    &__item:nth-child(7) {
+        height: 186px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    &__item:nth-child(8) {
+        height: 260px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    &__item:nth-child(-n + 4) {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet) {
+    .base-gallery {
+        margin: 0 $padding-tablet-negtive;
+        padding: 0 20px;
+        max-width: 768px;
+    }
+
+    .base-gallery__item:nth-child(5) {
+        height: auto;
+    }
+
+    .base-gallery__item:nth-child(6) {
+        width: 267px;
+        height: 264px;
+    }
+
+    .base-gallery__item:nth-child(7) {
+        width: 216px;
+        height: 264px;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .base-gallery__item:nth-child(8) {
+        height: 283px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
